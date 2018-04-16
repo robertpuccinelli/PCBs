@@ -1,0 +1,15 @@
+[submodule "libraries/digikey-kicad-library"]
+	path = libraries/digikey-kicad-library
+	url = git@github.com:digikey/digikey-kicad-library.git
+[submodule "libraries/kicad-symbols"]
+	path = libraries/kicad-symbols
+	url = https://github.com/kicad/kicad-symbols
+[submodule "libraries/kicad-footprints"]
+	path = libraries/kicad-footprints
+	url = https://github.com/kicad/kicad-footprints
+[submodule "libraries/kicad-packages3d"]
+	path = libraries/kicad-packages3d
+	url = https://github.com/kicad/kicad-packages3d
+[submodule "tools/xess_fp_wizard"]
+	path = tools/xess_fp_wizard
+	url = https://github.com/xesscorp/xess_fp_wizard
