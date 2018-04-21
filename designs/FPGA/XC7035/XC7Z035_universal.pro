@@ -1,4 +1,4 @@
-update=Sunday, April 15, 2018 'PMt' 05:30:25 PM
+update=Monday, April 16, 2018 'AMt' 08:25:48 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../libraries/digikey-kicad-library/digikey-symbols
+LibDir=../../libraries/digikey-kicad-library/digikey-symbols;../../libraries/custom-kicad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -200,3 +200,4 @@ LibName168=dk_Trimmer-Potentiometers
 LibName169=dk_TVS-Diodes
 LibName170=dk_TVS-Mixed-Technology
 LibName171=dk_USB-DVI-HDMI-Connectors
+LibName172=XC7Z035
