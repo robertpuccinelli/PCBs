@@ -1,4 +1,4 @@
-update=Friday, April 20, 2018 'PMt' 01:22:32 PM
+update=Monday, April 23, 2018 'PMt' 05:02:17 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../libraries/digikey-kicad-library/digikey-symbols
+LibDir=../../libraries/digikey-kicad-library/digikey-symbols;../../libraries/custom-kicad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -200,3 +200,4 @@ LibName168=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols
 LibName169=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols/dk_TVS-Diodes
 LibName170=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols/dk_TVS-Mixed-Technology
 LibName171=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors
+LibName172=/Users/robert.puccinelli/github/PCBs/libraries/custom-kicad/custom-digikey-kicad-library

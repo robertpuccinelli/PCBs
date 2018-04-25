@@ -1,0 +1,13 @@
+Reference, Value, Footprint, Datasheet
+"J3","Conn_01x02","Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm",""
+"J8","Conn_01x10","Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm",""
+"J4","Conn_01x10","Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm",""
+"J5","Conn_01x08","Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm",""
+"J1","Conn_01x08","Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm",""
+"J2","Conn_01x06","Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm",""
+"J7","Conn_01x04","Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm",""
+"J6","Conn_01x03","Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm",""
+"J9","Conn_01x02","Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm",""
+"J10","Conn_01x12","Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm",""
+"K1","RLY_5VCoil_PB1064CT","Relays_THT:Relay_DPDT_AXICOM_IMSeries_Pitch3.2mm",""
+"J11","Barrel_Jack","Connectors:BARREL_JACK",""
