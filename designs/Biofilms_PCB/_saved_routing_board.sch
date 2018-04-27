@@ -297,17 +297,6 @@ NoConn ~ 6100 2250
 NoConn ~ 1900 2000
 NoConn ~ 1900 1900
 $Comp
-L Conn_01x12 J11
-U 1 1 5ADA8FB0
-P 8800 2450
-F 0 "J11" H 8800 3050 50  0000 C CNN
-F 1 "Arduino IO" H 8800 1750 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 8800 2450 50  0001 C CNN
-F 3 "" H 8800 2450 50  0001 C CNN
-	1    8800 2450
-	-1   0    0    -1  
-$EndComp
-$Comp
 L GND #PWR01
 U 1 1 5ADF778B
 P 6450 2150
@@ -343,12 +332,12 @@ $EndComp
 $Comp
 L GND #PWR04
 U 1 1 5ADF80E8
-P 9650 2450
-F 0 "#PWR04" H 9650 2200 50  0001 C CNN
-F 1 "GND" H 9650 2300 50  0000 C CNN
-F 2 "" H 9650 2450 50  0001 C CNN
-F 3 "" H 9650 2450 50  0001 C CNN
-	1    9650 2450
+P 9600 2450
+F 0 "#PWR04" H 9600 2200 50  0001 C CNN
+F 1 "GND" H 9600 2300 50  0000 C CNN
+F 2 "" H 9600 2450 50  0001 C CNN
+F 3 "" H 9600 2450 50  0001 C CNN
+	1    9600 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -448,21 +437,21 @@ Text Label 2850 2850 0    39   ~ 0
 DIR
 Text Label 1600 2950 0    39   ~ 0
 AI0
-Text Label 9500 2050 2    39   ~ 0
+Text Label 9600 2050 2    39   ~ 0
 DO1
-Text Label 9500 1950 2    39   ~ 0
+Text Label 9600 1950 2    39   ~ 0
 DO0
-Text Label 9500 3050 2    39   ~ 0
+Text Label 8950 2450 2    39   ~ 0
 AI5
-Text Label 9500 2950 2    39   ~ 0
+Text Label 8950 2350 2    39   ~ 0
 AI4
-Text Label 9500 2850 2    39   ~ 0
+Text Label 8950 2250 2    39   ~ 0
 AI3
-Text Label 9500 2750 2    39   ~ 0
+Text Label 8950 2150 2    39   ~ 0
 AI2
-Text Label 9500 2650 2    39   ~ 0
+Text Label 8950 2050 2    39   ~ 0
 AI1
-Text Label 9500 2550 2    39   ~ 0
+Text Label 8950 1950 2    39   ~ 0
 AI0
 Text Label 2850 3050 0    39   ~ 0
 SOL_BASE
@@ -566,17 +555,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 2850 2850 2850
 Wire Wire Line
-	9500 3050 9000 3050
-Wire Wire Line
 	3300 2750 2850 2750
-Wire Wire Line
-	9500 2950 9000 2950
-Wire Wire Line
-	9000 2850 9500 2850
-Wire Wire Line
-	9500 2350 9000 2350
-Wire Wire Line
-	9500 2150 9000 2150
 Wire Wire Line
 	6450 2150 6100 2150
 Wire Wire Line
@@ -585,8 +564,6 @@ Wire Wire Line
 	4400 5350 4900 5350
 Wire Wire Line
 	1750 5250 2100 5250
-Wire Wire Line
-	9000 2250 9500 2250
 Wire Wire Line
 	3300 1950 2800 1950
 Wire Wire Line
@@ -641,10 +618,6 @@ Wire Wire Line
 	1500 2500 1500 2400
 Connection ~ 1500 2400
 Wire Wire Line
-	9000 1950 9500 1950
-Wire Wire Line
-	9000 2050 9500 2050
-Wire Wire Line
 	1900 2950 1600 2950
 Wire Wire Line
 	1900 3050 1600 3050
@@ -656,14 +629,6 @@ Wire Wire Line
 	1900 3350 1600 3350
 Wire Wire Line
 	1900 3450 1600 3450
-Wire Wire Line
-	9000 2450 9650 2450
-Wire Wire Line
-	9000 2550 9500 2550
-Wire Wire Line
-	9000 2650 9500 2650
-Wire Wire Line
-	9000 2750 9500 2750
 Wire Wire Line
 	2100 5350 1750 5350
 Wire Wire Line
@@ -708,7 +673,7 @@ U 1 1 5AE21918
 P 6450 5500
 F 0 "Q1" H 6630 5550 50  0000 L CNN
 F 1 "Q_NPN_Darlington_BCE" H 6630 5450 50  0000 L CNN
-F 2 "" H 6650 5600 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6650 5600 50  0001 C CNN
 F 3 "" H 6450 5500 50  0001 C CNN
 	1    6450 5500
 	1    0    0    -1  
@@ -719,7 +684,7 @@ U 1 1 5AE2198D
 P 6100 5500
 F 0 "R1" V 6180 5500 50  0000 C CNN
 F 1 "10k" V 6100 5500 50  0000 C CNN
-F 2 "" V 6030 5500 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 6030 5500 50  0001 C CNN
 F 3 "" H 6100 5500 50  0001 C CNN
 	1    6100 5500
 	0    1    1    0   
@@ -745,7 +710,7 @@ U 1 1 5AE2215E
 P 6550 5150
 F 0 "D1" H 6550 5250 50  0000 C CNN
 F 1 "D" H 6550 5050 50  0000 C CNN
-F 2 "" H 6550 5150 50  0001 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 6550 5150 50  0001 C CNN
 F 3 "" H 6550 5150 50  0001 C CNN
 	1    6550 5150
 	0    1    1    0   
@@ -773,7 +738,7 @@ U 1 1 5AE23C17
 P 9650 5250
 F 0 "S1" H 9650 5000 60  0000 C CNN
 F 1 "Dip_Switch_3" H 9650 5450 60  0000 C BNN
-F 2 "" V 9650 5250 60  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_DIP_x3_W8.61mm_Slide_LowProfile" V 9650 5250 60  0001 C CNN
 F 3 "" V 9650 5250 60  0001 C CNN
 	1    9650 5250
 	1    0    0    -1  
@@ -805,18 +770,18 @@ Wire Wire Line
 Wire Wire Line
 	9450 5350 9300 5350
 Text Label 9300 5350 0    39   ~ 0
-MS1
+MS3
 Text Label 9300 5250 0    39   ~ 0
 MS2
 Text Label 9300 5150 0    39   ~ 0
-MS3
+MS1
 Text Notes 9100 4750 0    118  ~ 24
 MODE SELECT\nDIP SWITCHES
-Text Label 9500 2150 2    39   ~ 0
+Text Label 9600 2150 2    39   ~ 0
 DO2
-Text Label 9500 2250 2    39   ~ 0
+Text Label 9600 2250 2    39   ~ 0
 DO3
-Text Label 9500 2350 2    39   ~ 0
+Text Label 9600 2350 2    39   ~ 0
 DO4
 $Comp
 L Conn_01x04 J12
@@ -824,7 +789,7 @@ U 1 1 5AE24EA1
 P 7950 2050
 F 0 "J12" H 7950 2250 50  0000 C CNN
 F 1 "Arduino Power Out" H 7950 1750 50  0000 C CNN
-F 2 "" H 7950 2050 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7950 2050 50  0001 C CNN
 F 3 "" H 7950 2050 50  0001 C CNN
 	1    7950 2050
 	-1   0    0    -1  
@@ -846,6 +811,28 @@ F 1 "GND" H 8350 2100 50  0000 C CNN
 F 2 "" H 8350 2250 50  0001 C CNN
 F 3 "" H 8350 2250 50  0001 C CNN
 	1    8350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J11
+U 1 1 5AE35C87
+P 9150 2150
+F 0 "J11" H 9150 2450 50  0000 C CNN
+F 1 "Analog In" H 9150 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 9150 2150 50  0001 C CNN
+F 3 "" H 9150 2150 50  0001 C CNN
+	1    9150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J13
+U 1 1 5AE35E1C
+P 9800 2150
+F 0 "J13" H 9800 2450 50  0000 C CNN
+F 1 "Digital Out" H 9800 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 9800 2150 50  0001 C CNN
+F 3 "" H 9800 2150 50  0001 C CNN
+	1    9800 2150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

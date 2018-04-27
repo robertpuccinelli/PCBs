@@ -1,4 +1,4 @@
-update=Monday, April 23, 2018 'PMt' 05:02:17 PM
+update=Wednesday, April 25, 2018 'PMt' 03:42:34 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -201,3 +201,13 @@ LibName169=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols
 LibName170=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols/dk_TVS-Mixed-Technology
 LibName171=/Users/robby/git/PCBs/libraries/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors
 LibName172=/Users/robert.puccinelli/github/PCBs/libraries/custom-kicad/custom-digikey-kicad-library
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
