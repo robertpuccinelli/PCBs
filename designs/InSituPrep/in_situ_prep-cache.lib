@@ -1,0 +1,305 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# +24V
+#
+DEF +24V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+24V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +24V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Barrel_Jack
+#
+DEF Barrel_Jack J 0 40 Y Y 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Barrel_Jack" 0 -175 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+ALIAS Jack-DC
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 50 -90 75 -65 N
+P 2 0 1 10 200 100 150 100 N
+P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+X ~ 3 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x04
+#
+DEF Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x06
+#
+DEF Conn_01x06 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Conn_01x06" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -350 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x08
+#
+DEF Conn_01x08 J 0 40 Y N 1 F N
+F0 "J" 0 400 50 H V C CNN
+F1 "Conn_01x08" 0 -500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 350 50 -450 1 1 10 f
+X Pin_1 1 -200 300 150 R 50 50 1 1 P
+X Pin_2 2 -200 200 150 R 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 -200 0 150 R 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 -200 -200 150 R 50 50 1 1 P
+X Pin_7 7 -200 -300 150 R 50 50 1 1 P
+X Pin_8 8 -200 -400 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x10
+#
+DEF Conn_01x10 J 0 40 Y N 1 F N
+F0 "J" 0 500 50 H V C CNN
+F1 "Conn_01x10" 0 -600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 450 50 -550 1 1 10 f
+X Pin_1 1 -200 400 150 R 50 50 1 1 P
+X Pin_2 2 -200 300 150 R 50 50 1 1 P
+X Pin_3 3 -200 200 150 R 50 50 1 1 P
+X Pin_4 4 -200 100 150 R 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 -200 -100 150 R 50 50 1 1 P
+X Pin_7 7 -200 -200 150 R 50 50 1 1 P
+X Pin_8 8 -200 -300 150 R 50 50 1 1 P
+X Pin_9 9 -200 -400 150 R 50 50 1 1 P
+X Pin_10 10 -200 -500 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DB9_Female
+#
+DEF DB9_Female J 0 40 Y N 1 F N
+F0 "J" 0 550 50 H V C CNN
+F1 "DB9_Female" 0 -575 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ DB*F*
+$ENDFPLIST
+DRAW
+C -70 -400 30 0 1 0 N
+C -70 -200 30 0 1 0 N
+C -70 0 30 0 1 0 N
+C -70 200 30 0 1 0 N
+C -70 400 30 0 1 0 N
+C 50 -300 30 0 1 0 N
+C 50 -100 30 0 1 0 N
+C 50 100 30 0 1 0 N
+C 50 300 30 0 1 0 N
+P 2 0 1 0 -150 -400 -100 -400 N
+P 2 0 1 0 -150 -300 20 -300 N
+P 2 0 1 0 -150 -200 -100 -200 N
+P 2 0 1 0 -150 -100 20 -100 N
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -150 100 20 100 N
+P 2 0 1 0 -150 200 -100 200 N
+P 2 0 1 0 -150 300 20 300 N
+P 2 0 1 0 -150 400 -100 400 N
+P 5 0 1 10 -150 525 -150 -525 150 -375 150 375 -150 525 f
+X 1 1 -300 400 150 R 50 50 1 1 P
+X 2 2 -300 200 150 R 50 50 1 1 P
+X 3 3 -300 0 150 R 50 50 1 1 P
+X 4 4 -300 -200 150 R 50 50 1 1 P
+X 5 5 -300 -400 150 R 50 50 1 1 P
+X 6 6 -300 300 150 R 50 50 1 1 P
+X 7 7 -300 100 150 R 50 50 1 1 P
+X 8 8 -300 -100 150 R 50 50 1 1 P
+X 9 9 -300 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Dip_Switch_3
+#
+DEF Dip_Switch_3 S 0 40 Y Y 1 F N
+F0 "S" 0 -250 60 H V C CNN
+F1 "Dip_Switch_3" 0 200 60 H V C BNN
+F2 "" 0 0 60 V I C CNN
+F3 "" 0 0 60 V I C CNN
+DRAW
+S -100 -150 100 150 0 1 0 N
+X 1 1 -200 -100 100 R 50 50 1 1 I
+X 2 2 -200 0 100 R 50 50 1 1 I
+X 3 3 -200 100 100 R 50 50 1 1 I
+X 4 4 200 -100 100 L 50 50 1 1 I
+X 5 5 200 0 100 L 50 50 1 1 I
+X 6 6 200 100 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# GND
+#
+DEF GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# MC7805BDTRKG
+#
+DEF MC7805BDTRKG U 0 40 Y Y 1 F N
+F0 "U" 0 200 60 H V C CNN
+F1 "MC7805BDTRKG" 0 300 60 H V C CNN
+F2 "digikey-footprints:TO-252-3" 200 200 60 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/MC7800-D.PDF" 200 300 60 H I L CNN
+F4 "MC7805BDTRKGOSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MC7805BDTRKG" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "http://www.onsemi.com/pub/Collateral/MC7800-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/MC7805BDTRKG/MC7805BDTRKGOSCT-ND/1139742" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 5V 1A DPAK-3" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 200 -200 0 1 0 f
+X IN 1 -400 0 200 R 50 50 1 1 I
+X OUT 3 400 0 200 L 50 50 1 1 O
+X TAB 4 0 -400 200 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# PWR_FLAG
+#
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X pwr 1 0 0 0 U 50 50 0 0 w
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+ENDDRAW
+ENDDEF
+#
+# R
+#
+DEF R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
