@@ -1,0 +1,25 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADP172
+D DC/DC converter 300 mA, Low Quiescent Current, CMOS Linear Regulator 1.65VO 3.3VI
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADP172.pdf
+$ENDCMP
+#
+$CMP INA214
+D Voltage Output, Low- or High-Side Measurement, Bidirectional, Zero-Drift Series, Current-Shunt Monitors 100V/V, SC70
+K current, monitor, shunt, bidirectional
+F http://www.ti.com/lit/ds/symlink/ina211.pdf
+$ENDCMP
+#
+$CMP L2293
+D Quad Half Bridge 2.8-36V 600mA
+F https://www.st.com/content/ccc/resource/technical/document/datasheet/group2/86/3b/3e/67/62/fe/47/96/CD00204113/files/CD00204113.pdf/jcr:content/translations/en.CD00204113.pdf
+$ENDCMP
+#
+$CMP OKI-T
+D OKI-T/36W-40W DC/DC converter 5-15V Out 3A
+K DC/DC , variable
+F https://power.murata.com/data/power/oki-t36-w40.pdf
+$ENDCMP
+#
+#End Doc Library
