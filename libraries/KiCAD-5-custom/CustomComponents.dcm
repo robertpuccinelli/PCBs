@@ -22,4 +22,14 @@ K DC/DC , variable
 F https://power.murata.com/data/power/oki-t36-w40.pdf
 $ENDCMP
 #
+$CMP R-7XX
+D Recom Power Supply
+F https://www.recom-power.com/pdf/Innoline/R-7xxxP_D.pdf
+$ENDCMP
+#
+$CMP V78XX
+K SIP-3
+F https://www.cui.com/product/resource/v78xx-1500.pdf
+$ENDCMP
+#
 #End Doc Library
