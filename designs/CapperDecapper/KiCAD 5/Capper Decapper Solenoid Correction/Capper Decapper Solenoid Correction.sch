@@ -1,0 +1,138 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_SGD Q1
+U 1 1 5BFF40A0
+P 3850 3500
+F 0 "Q1" H 4055 3546 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 4055 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 4050 3600 50  0001 C CNN
+F 3 "~" H 3850 3500 50  0001 C CNN
+	1    3850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q2
+U 1 1 5BFF432B
+P 4700 3200
+F 0 "Q2" H 4906 3154 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 4906 3245 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4900 3300 50  0001 C CNN
+F 3 "~" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5BFF449B
+P 3950 2950
+F 0 "R1" H 4018 2996 50  0000 L CNN
+F 1 "R_US" H 4018 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3990 2940 50  0001 C CNN
+F 3 "~" H 3950 2950 50  0001 C CNN
+	1    3950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5BFF451B
+P 4800 3750
+F 0 "D1" V 4754 3829 50  0000 L CNN
+F 1 "D" V 4845 3829 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P12.70mm_Horizontal" H 4800 3750 50  0001 C CNN
+F 3 "~" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MH3
+U 1 1 5BFF45D7
+P 4400 2600
+F 0 "MH3" H 4500 2651 50  0000 L CNN
+F 1 "18V" H 4500 2560 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 4400 2600 50  0001 C CNN
+F 3 "~" H 4400 2600 50  0001 C CNN
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MH2
+U 1 1 5BFF4654
+P 3950 4150
+F 0 "MH2" H 3850 4108 50  0000 R CNN
+F 1 "GND" H 3850 4199 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 3950 4150 50  0001 C CNN
+F 3 "~" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MH4
+U 1 1 5BFF46A6
+P 5400 3500
+F 0 "MH4" V 5354 3649 50  0000 L CNN
+F 1 "SOLENOID" V 5445 3649 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 5400 3500 50  0001 C CNN
+F 3 "~" H 5400 3500 50  0001 C CNN
+	1    5400 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MH1
+U 1 1 5BFF470D
+P 3050 3200
+F 0 "MH1" H 2950 3251 50  0000 R CNN
+F 1 "PI_SIGNAL" H 2950 3160 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 3050 3200 50  0001 C CNN
+F 3 "~" H 3050 3200 50  0001 C CNN
+	1    3050 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3500 3050 3500
+Wire Wire Line
+	3050 3500 3050 3300
+Wire Wire Line
+	3950 4050 3950 3900
+Wire Wire Line
+	3950 3300 3950 3200
+Wire Wire Line
+	4500 3200 3950 3200
+Connection ~ 3950 3200
+Wire Wire Line
+	3950 3200 3950 3100
+Wire Wire Line
+	3950 2800 4400 2800
+Wire Wire Line
+	4800 2800 4800 3000
+Wire Wire Line
+	4400 2700 4400 2800
+Connection ~ 4400 2800
+Wire Wire Line
+	4400 2800 4800 2800
+Wire Wire Line
+	4800 3900 3950 3900
+Connection ~ 3950 3900
+Wire Wire Line
+	3950 3900 3950 3700
+Wire Wire Line
+	4800 3400 4800 3500
+Wire Wire Line
+	5300 3500 4800 3500
+Connection ~ 4800 3500
+Wire Wire Line
+	4800 3500 4800 3600
+$EndSCHEMATC
