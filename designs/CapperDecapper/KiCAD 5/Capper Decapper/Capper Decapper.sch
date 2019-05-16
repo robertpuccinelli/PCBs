@@ -95,19 +95,19 @@ $EndComp
 $Comp
 L Device:D_Schottky_Small_ALT D1
 U 1 1 5BB16426
-P 7000 5850
-F 0 "D1" V 7046 5782 50  0000 R CNN
-F 1 "Schottky" V 7200 5800 50  0000 R CNN
-F 2 "Diode_SMD:D_SMA" V 7000 5850 50  0001 C CNN
-F 3 "~" V 7000 5850 50  0001 C CNN
-	1    7000 5850
+P 6400 6300
+F 0 "D1" V 6500 6500 50  0000 R CNN
+F 1 "Schottky" V 6400 6700 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA" V 6400 6300 50  0001 C CNN
+F 3 "~" V 6400 6300 50  0001 C CNN
+	1    6400 6300
 	0    1    1    0   
 $EndComp
-Text Label 6000 5800 2    50   ~ 0
+Text Label 6000 5850 2    50   ~ 0
 SOLSET
 Wire Wire Line
 	5650 5800 5650 6400
-Text Label 6700 5450 0    50   ~ 0
+Text Label 6450 6100 0    50   ~ 0
 SOL+
 $Comp
 L Device:C C21
@@ -309,47 +309,8 @@ F 3 "~" H 1700 5450 50  0001 C CNN
 $EndComp
 Text Label 1600 4000 0    50   ~ 0
 5V
-$Comp
-L Device:Q_NMOS_GSD Q1
-U 1 1 5B9EE045
-P 6500 5800
-F 0 "Q1" H 6705 5846 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 6100 5950 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6700 5900 50  0001 C CNN
-F 3 "~" H 6500 5800 50  0001 C CNN
-	1    6500 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 5450 6700 5450
-Wire Wire Line
-	6600 5600 6600 5550
 Wire Wire Line
 	5650 5700 5650 5300
-Connection ~ 6600 6400
-$Comp
-L Device:R_US R11
-U 1 1 5BBBD34E
-P 6050 5950
-F 0 "R11" H 5982 5904 50  0000 R CNN
-F 1 "5k" H 5982 5995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6090 5940 50  0001 C CNN
-F 3 "~" H 6050 5950 50  0001 C CNN
-	1    6050 5950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6050 6100 6050 6400
-Wire Wire Line
-	6000 5800 6050 5800
-Connection ~ 6050 5800
-Wire Wire Line
-	6050 5800 6300 5800
-Connection ~ 6050 6400
-Wire Wire Line
-	6050 6400 5650 6400
-Wire Wire Line
-	6050 6400 6600 6400
 $Comp
 L power:GND #PWR04
 U 1 1 5BC5EFB9
@@ -361,9 +322,6 @@ F 3 "" H 2250 7500 50  0001 C CNN
 	1    2250 7500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 5300 6600 5300
-Connection ~ 6600 5300
 Text Label 2250 6400 2    50   ~ 0
 FWD
 Text Label 2250 6300 2    50   ~ 0
@@ -2173,10 +2131,6 @@ Wire Wire Line
 Connection ~ 7950 5750
 Wire Wire Line
 	8300 6050 8300 6400
-Wire Wire Line
-	6600 5300 7650 5300
-Wire Wire Line
-	6600 6400 7000 6400
 Connection ~ 8300 6400
 Wire Wire Line
 	8300 6400 8600 6400
@@ -2355,23 +2309,6 @@ F 3 "" H 3000 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3000 3200
-Connection ~ 6600 5450
-Wire Wire Line
-	6600 5450 6600 5300
-Wire Wire Line
-	6600 6000 6600 6400
-Wire Wire Line
-	7000 5950 7000 6400
-Connection ~ 7000 6400
-Wire Wire Line
-	7000 6400 7300 6400
-Wire Wire Line
-	7000 5750 7000 5550
-Wire Wire Line
-	7000 5550 6600 5550
-Connection ~ 6600 5550
-Wire Wire Line
-	6600 5550 6600 5450
 Text Label 8000 6250 0    50   ~ 0
 V_motor
 Wire Wire Line
@@ -2504,4 +2441,66 @@ $EndComp
 Connection ~ 7950 6100
 Wire Wire Line
 	7950 6100 7950 6250
+$Comp
+L Device:R_US R?
+U 1 1 5C74585C
+P 6100 5550
+F 0 "R?" H 6032 5504 50  0000 R CNN
+F 1 "R_US" H 6032 5595 50  0000 R CNN
+F 2 "" V 6140 5540 50  0001 C CNN
+F 3 "~" H 6100 5550 50  0001 C CNN
+	1    6100 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 5700 6100 5850
+$Comp
+L Device:R_US R?
+U 1 1 5C76DF81
+P 6400 5450
+F 0 "R?" H 6468 5496 50  0000 L CNN
+F 1 "R_US" H 6468 5405 50  0000 L CNN
+F 2 "" V 6440 5440 50  0001 C CNN
+F 3 "~" H 6400 5450 50  0001 C CNN
+	1    6400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5850 6100 5850
+Wire Wire Line
+	5650 5300 6100 5300
+Connection ~ 6400 5300
+Wire Wire Line
+	6400 5300 7650 5300
+Wire Wire Line
+	6400 5600 6400 5650
+Wire Wire Line
+	6100 5400 6100 5300
+Connection ~ 6100 5300
+Wire Wire Line
+	6100 5300 6400 5300
+Wire Wire Line
+	6400 6050 6400 6100
+Wire Wire Line
+	5650 6400 6400 6400
+Connection ~ 6400 6400
+Wire Wire Line
+	6400 6400 7300 6400
+Wire Wire Line
+	6400 6100 6450 6100
+Connection ~ 6400 6100
+Wire Wire Line
+	6400 6100 6400 6200
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5CB67504
+P 6300 5850
+F 0 "Q?" H 6506 5896 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 6506 5805 50  0000 L CNN
+F 2 "" H 6500 5950 50  0001 C CNN
+F 3 "~" H 6300 5850 50  0001 C CNN
+	1    6300 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 5850
 $EndSCHEMATC

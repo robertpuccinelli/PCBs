@@ -1,0 +1,234 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LM2574N-12 U1
+U 1 1 5C3D05D7
+P 4500 3200
+F 0 "U1" H 4500 3567 50  0000 C CNN
+F 1 "LM2574N-12" H 4500 3476 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4100 3550 50  0001 L CIN
+F 3 "http://www.national.com/ds/LM/LM2574.pdf" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_KAK D1
+U 1 1 5C3D0745
+P 5000 3600
+F 0 "D1" H 4975 3375 50  0000 C CNN
+F 1 "D_Schottky" H 4975 3466 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5000 3600 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5C3D0931
+P 5400 3300
+F 0 "L1" V 5590 3300 50  0000 C CNN
+F 1 "L" V 5499 3300 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP" H 5400 3300 50  0001 C CNN
+F 3 "~" H 5400 3300 50  0001 C CNN
+	1    5400 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 3500 4550 3500
+Wire Wire Line
+	4550 3500 4550 3600
+Wire Wire Line
+	4550 3600 4800 3600
+Connection ~ 4550 3500
+Wire Wire Line
+	4550 3500 4500 3500
+Wire Wire Line
+	5250 3600 5250 3300
+Wire Wire Line
+	5250 3300 5000 3300
+$Comp
+L power:GND #PWR0101
+U 1 1 5C3D0D4A
+P 4550 3600
+F 0 "#PWR0101" H 4550 3350 50  0001 C CNN
+F 1 "GND" H 4555 3427 50  0000 C CNN
+F 2 "" H 4550 3600 50  0001 C CNN
+F 3 "" H 4550 3600 50  0001 C CNN
+	1    4550 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 3600
+$Comp
+L Device:CP C2
+U 1 1 5C3D1036
+P 5550 3450
+F 0 "C2" H 5668 3496 50  0000 L CNN
+F 1 "CP" H 5668 3405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5588 3300 50  0001 C CNN
+F 3 "~" H 5550 3450 50  0001 C CNN
+	1    5550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5C3D112F
+P 3650 3250
+F 0 "C1" H 3768 3296 50  0000 L CNN
+F 1 "CP" H 3768 3205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3688 3100 50  0001 C CNN
+F 3 "~" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 3300
+Wire Wire Line
+	5000 3100 5550 3100
+Wire Wire Line
+	5550 3100 5550 3300
+Connection ~ 5550 3300
+Connection ~ 5250 3600
+Wire Wire Line
+	4000 3100 3650 3100
+Wire Wire Line
+	3650 3400 3650 3600
+Wire Wire Line
+	3650 3600 4550 3600
+Text Label 4000 3300 3    50   ~ 0
+ENABLE
+Wire Wire Line
+	5550 3300 5700 3300
+Text Label 5700 3300 0    50   ~ 0
+OUT_Pin
+$Comp
+L power:+VDC #PWR0102
+U 1 1 5C3D1795
+P 3500 2150
+F 0 "#PWR0102" H 3500 2050 50  0001 C CNN
+F 1 "+VDC" H 3500 2425 50  0000 C CNN
+F 2 "" H 3500 2150 50  0001 C CNN
+F 3 "" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C3D180C
+P 3500 2250
+F 0 "#FLG0101" H 3500 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 3500 2378 50  0000 L CNN
+F 2 "" H 3500 2250 50  0001 C CNN
+F 3 "~" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C3D1852
+P 4250 2350
+F 0 "#PWR0103" H 4250 2100 50  0001 C CNN
+F 1 "GND" H 4255 2177 50  0000 C CNN
+F 2 "" H 4250 2350 50  0001 C CNN
+F 3 "" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C3D1898
+P 4250 2250
+F 0 "#FLG0102" H 4250 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 4250 2378 50  0000 L CNN
+F 2 "" H 4250 2250 50  0001 C CNN
+F 3 "~" H 4250 2250 50  0001 C CNN
+	1    4250 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5C3D19CC
+P 3500 2550
+F 0 "J1" V 3347 2598 50  0000 L CNN
+F 1 "18VIn" V 3438 2598 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3500 2550 50  0001 C CNN
+F 3 "~" H 3500 2550 50  0001 C CNN
+	1    3500 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2350 3500 2250
+Connection ~ 3500 2250
+Wire Wire Line
+	3500 2250 3500 2150
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5C3D1C08
+P 4250 1950
+F 0 "J2" V 4190 1862 50  0000 R CNN
+F 1 "GNDIn" V 4099 1862 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4250 1950 50  0001 C CNN
+F 3 "~" H 4250 1950 50  0001 C CNN
+	1    4250 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2150 4250 2250
+Connection ~ 4250 2250
+Wire Wire Line
+	4250 2250 4250 2350
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5C3D1E28
+P 5000 2550
+F 0 "J3" V 4847 2598 50  0000 L CNN
+F 1 "VOut" V 4938 2598 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5000 2550 50  0001 C CNN
+F 3 "~" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2350 5000 2200
+Text Label 5000 2200 0    50   ~ 0
+OUT_Pin
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 5C3D2065
+P 5400 2550
+F 0 "J4" V 5247 2598 50  0000 L CNN
+F 1 "ENABLE" V 5338 2598 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5400 2550 50  0001 C CNN
+F 3 "~" H 5400 2550 50  0001 C CNN
+	1    5400 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2350 5400 2200
+Text Label 5400 2200 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	5250 3700 5250 3600
+Text Label 3500 2250 2    50   ~ 0
+VIn
+Text Label 3650 3100 2    50   ~ 0
+VIn
+Wire Wire Line
+	5550 3600 5550 3850
+Wire Wire Line
+	5550 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3600
+Connection ~ 4800 3600
+$EndSCHEMATC
