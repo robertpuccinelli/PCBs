@@ -1,0 +1,406 @@
+EESchema Schematic File Version 4
+LIBS:UVRelay-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "UV Microscope LED Demultiplexer"
+Date "2019-09-25"
+Rev "0.1"
+Comp "Chan-Zuckerberg Biohub"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:FINDER-32.21-x000 K1
+U 1 1 5D85553B
+P 6000 2200
+F 0 "K1" V 6450 2200 50  0000 L CNN
+F 1 " DAE-RB/Ro4-JQC-5V" V 5500 1550 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 7270 2170 50  0001 C CNN
+F 3 "https://gfinder.findernet.com/assets/Series/355/S32EN.pdf" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:FINDER-32.21-x000 K2
+U 1 1 5D8555A1
+P 6000 3300
+F 0 "K2" V 6450 3300 50  0000 L CNN
+F 1 "FINDER-32.21-x000" V 6430 3255 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 7270 3270 50  0001 C CNN
+F 3 "https://gfinder.findernet.com/assets/Series/355/S32EN.pdf" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:FINDER-32.21-x000 K3
+U 1 1 5D855602
+P 6000 4400
+F 0 "K3" V 6450 4400 50  0000 L CNN
+F 1 "FINDER-32.21-x000" V 6430 4355 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 7270 4370 50  0001 C CNN
+F 3 "https://gfinder.findernet.com/assets/Series/355/S32EN.pdf" H 6000 4400 50  0001 C CNN
+	1    6000 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:FINDER-32.21-x000 K4
+U 1 1 5D855651
+P 6000 5600
+F 0 "K4" V 6450 5600 50  0000 L CNN
+F 1 "FINDER-32.21-x000" V 6430 5555 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 7270 5570 50  0001 C CNN
+F 3 "https://gfinder.findernet.com/assets/Series/355/S32EN.pdf" H 6000 5600 50  0001 C CNN
+	1    6000 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5D855843
+P 3100 2050
+F 0 "J1" H 3100 2300 50  0000 C CNN
+F 1 "DC Barrel Jack" H 3100 2400 50  0000 C CNN
+F 2 "" H 3150 2010 50  0001 C CNN
+F 3 "~" H 3150 2010 50  0001 C CNN
+	1    3100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-4 J5
+U 1 1 5D8574FB
+P 7850 2900
+F 0 "J5" H 7850 2626 50  0000 C CNN
+F 1 "M8-4" H 7850 2535 50  0000 C CNN
+F 2 "" H 7850 2900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7850 2900 50  0001 C CNN
+	1    7850 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:DIN-4 J6
+U 1 1 5D857562
+P 7850 3900
+F 0 "J6" H 7850 3626 50  0000 C CNN
+F 1 "M8-4" H 7850 3535 50  0000 C CNN
+F 2 "" H 7850 3900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7850 3900 50  0001 C CNN
+	1    7850 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:DIN-4 J7
+U 1 1 5D8575C4
+P 7850 4900
+F 0 "J7" H 7850 4626 50  0000 C CNN
+F 1 "M8-4" H 7850 4535 50  0000 C CNN
+F 2 "" H 7850 4900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7850 4900 50  0001 C CNN
+	1    7850 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:DIN-4 J8
+U 1 1 5D857623
+P 7850 5900
+F 0 "J8" H 7850 5626 50  0000 C CNN
+F 1 "M8-4" H 7850 5535 50  0000 C CNN
+F 2 "" H 7850 5900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7850 5900 50  0001 C CNN
+	1    7850 5900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D8BAF3B
+P 3500 2150
+F 0 "#PWR04" H 3500 1900 50  0001 C CNN
+F 1 "GND" H 3505 1977 50  0000 C CNN
+F 2 "" H 3500 2150 50  0001 C CNN
+F 3 "" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5D8BAF9F
+P 3500 1950
+F 0 "#PWR03" H 3500 1800 50  0001 C CNN
+F 1 "+5V" H 3515 2123 50  0000 C CNN
+F 2 "" H 3500 1950 50  0001 C CNN
+F 3 "" H 3500 1950 50  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2500 6300 2750
+Wire Wire Line
+	6300 2750 5200 2750
+Wire Wire Line
+	5200 2750 5200 3500
+Wire Wire Line
+	5200 3500 5700 3500
+Wire Wire Line
+	5200 4600 5700 4600
+Wire Wire Line
+	6300 3600 6300 3800
+Wire Wire Line
+	6300 3800 5000 3800
+Wire Wire Line
+	5000 3800 5000 5800
+Wire Wire Line
+	5000 5800 5700 5800
+Wire Wire Line
+	6300 3400 6400 3400
+Wire Wire Line
+	6400 3400 6400 3900
+Wire Wire Line
+	6400 3900 5200 3900
+Wire Wire Line
+	5200 3900 5200 4600
+Wire Wire Line
+	6300 5900 7550 5900
+Wire Wire Line
+	6300 5700 7550 5700
+Wire Wire Line
+	7550 5700 7550 4900
+Wire Wire Line
+	6300 4700 7550 4700
+Wire Wire Line
+	7550 4700 7550 3900
+Wire Wire Line
+	6300 4500 7350 4500
+Wire Wire Line
+	7350 4500 7350 2900
+Wire Wire Line
+	7350 2900 7550 2900
+Text Label 5700 2000 2    50   ~ 0
+IN_RELAY1
+Text Label 5700 3100 2    50   ~ 0
+IN_RELAY2
+Text Label 5700 4200 2    50   ~ 0
+IN_RELAY3
+Text Label 5700 5400 2    50   ~ 0
+IN_RELAY4
+NoConn ~ 6300 2300
+NoConn ~ 7950 3200
+NoConn ~ 8150 2900
+NoConn ~ 7950 5200
+NoConn ~ 8150 4900
+NoConn ~ 7950 6200
+NoConn ~ 8150 5900
+$Comp
+L power:GND #PWR011
+U 1 1 5D8C5CD3
+P 7750 3200
+F 0 "#PWR011" H 7750 2950 50  0001 C CNN
+F 1 "GND" H 7755 3027 50  0000 C CNN
+F 2 "" H 7750 3200 50  0001 C CNN
+F 3 "" H 7750 3200 50  0001 C CNN
+	1    7750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5D8C5D7A
+P 7750 4200
+F 0 "#PWR012" H 7750 3950 50  0001 C CNN
+F 1 "GND" H 7755 4027 50  0000 C CNN
+F 2 "" H 7750 4200 50  0001 C CNN
+F 3 "" H 7750 4200 50  0001 C CNN
+	1    7750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5D8C5F20
+P 7750 5200
+F 0 "#PWR013" H 7750 4950 50  0001 C CNN
+F 1 "GND" H 7755 5027 50  0000 C CNN
+F 2 "" H 7750 5200 50  0001 C CNN
+F 3 "" H 7750 5200 50  0001 C CNN
+	1    7750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5D8C5F8B
+P 7750 6200
+F 0 "#PWR014" H 7750 5950 50  0001 C CNN
+F 1 "GND" H 7755 6027 50  0000 C CNN
+F 2 "" H 7750 6200 50  0001 C CNN
+F 3 "" H 7750 6200 50  0001 C CNN
+	1    7750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5D8C6D4A
+P 6500 5400
+F 0 "#PWR010" H 6500 5150 50  0001 C CNN
+F 1 "GND" H 6505 5227 50  0000 C CNN
+F 2 "" H 6500 5400 50  0001 C CNN
+F 3 "" H 6500 5400 50  0001 C CNN
+	1    6500 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5D8C6DB5
+P 6500 4200
+F 0 "#PWR09" H 6500 3950 50  0001 C CNN
+F 1 "GND" H 6505 4027 50  0000 C CNN
+F 2 "" H 6500 4200 50  0001 C CNN
+F 3 "" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5D8C6E20
+P 6500 3100
+F 0 "#PWR08" H 6500 2850 50  0001 C CNN
+F 1 "GND" H 6505 2927 50  0000 C CNN
+F 2 "" H 6500 3100 50  0001 C CNN
+F 3 "" H 6500 3100 50  0001 C CNN
+	1    6500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D8C6E8B
+P 6500 2000
+F 0 "#PWR07" H 6500 1750 50  0001 C CNN
+F 1 "GND" H 6505 1827 50  0000 C CNN
+F 2 "" H 6500 2000 50  0001 C CNN
+F 3 "" H 6500 2000 50  0001 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2000 6300 2000
+Wire Wire Line
+	6500 3100 6300 3100
+Wire Wire Line
+	6500 4200 6300 4200
+Wire Wire Line
+	6500 5400 6300 5400
+Wire Wire Line
+	3400 1950 3500 1950
+Wire Wire Line
+	3500 2150 3400 2150
+$Comp
+L Connector:DIN-5 J3
+U 1 1 5D8C8054
+P 3200 5350
+F 0 "J3" H 3200 5100 50  0000 C CNN
+F 1 "M8-5" H 3200 5000 50  0000 C CNN
+F 2 "" H 3200 5350 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3200 5350 50  0001 C CNN
+	1    3200 5350
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D8C9F4E
+P 3200 5650
+F 0 "#PWR02" H 3200 5400 50  0001 C CNN
+F 1 "GND" H 3205 5477 50  0000 C CNN
+F 2 "" H 3200 5650 50  0001 C CNN
+F 3 "" H 3200 5650 50  0001 C CNN
+	1    3200 5650
+	1    0    0    -1  
+$EndComp
+Text Label 2900 5250 2    50   ~ 0
+IN_RELAY1
+Text Label 2900 5450 2    50   ~ 0
+IN_RELAY2
+Text Label 3500 5450 0    50   ~ 0
+IN_RELAY3
+Text Label 3500 5250 0    50   ~ 0
+IN_RELAY4
+$Comp
+L Connector:DIN-4 J2
+U 1 1 5D8CA302
+P 3200 3650
+F 0 "J2" H 3200 3400 50  0000 C CNN
+F 1 "M8-4" H 3200 3300 50  0000 C CNN
+F 2 "" H 3200 3650 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3200 3650 50  0001 C CNN
+	1    3200 3650
+	1    0    0    1   
+$EndComp
+Text Label 2900 3650 2    50   ~ 0
+V_LED
+$Comp
+L power:GND #PWR01
+U 1 1 5D8CA4D8
+P 3100 3950
+F 0 "#PWR01" H 3100 3700 50  0001 C CNN
+F 1 "GND" H 3105 3777 50  0000 C CNN
+F 2 "" H 3100 3950 50  0001 C CNN
+F 3 "" H 3100 3950 50  0001 C CNN
+	1    3100 3950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3300 3950
+NoConn ~ 3500 3650
+Text Label 5700 2400 2    50   ~ 0
+V_LED
+Text Notes 7300 1550 0    118  ~ 24
+LED Connectors\n
+Text Notes 5300 1550 0    118  ~ 24
+4-Channel\nRelay Board
+Text Notes 2850 1600 0    118  ~ 24
+DC 5V In
+Text Notes 2850 3150 0    118  ~ 24
+LED V In
+Text Notes 2650 4850 0    118  ~ 24
+Relay Inputs
+Wire Notes Line
+	4900 6750 6650 6750
+Wire Notes Line
+	4900 1650 6650 1650
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5D8D454A
+P 6000 6350
+F 0 "J4" H 6080 6296 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6080 6251 50  0001 L CNN
+F 2 "" H 6000 6350 50  0001 C CNN
+F 3 "~" H 6000 6350 50  0001 C CNN
+	1    6000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D8D5505
+P 5800 6450
+F 0 "#PWR06" H 5800 6200 50  0001 C CNN
+F 1 "GND" H 5805 6277 50  0000 C CNN
+F 2 "" H 5800 6450 50  0001 C CNN
+F 3 "" H 5800 6450 50  0001 C CNN
+	1    5800 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5D8D557C
+P 5800 6350
+F 0 "#PWR05" H 5800 6200 50  0001 C CNN
+F 1 "+5V" H 5815 6523 50  0000 C CNN
+F 2 "" H 5800 6350 50  0001 C CNN
+F 3 "" H 5800 6350 50  0001 C CNN
+	1    5800 6350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6650 1650 6650 6750
+Wire Notes Line
+	4900 1650 4900 6750
+NoConn ~ 7950 4200
+NoConn ~ 8150 3900
+$EndSCHEMATC
