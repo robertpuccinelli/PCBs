@@ -4184,13 +4184,13 @@ F 3 "" H 12125 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_LevelTranslator:TXS0102DQE U13
-U 1 1 5E5DC150
+L Logic_LevelTranslator:TXB0102DCU U13
+U 1 1 5F2DB700
 P 12875 9100
-F 0 "U13" H 13250 8550 50  0000 C CNN
-F 1 "TXS0102DQE" H 13225 8650 50  0000 C CNN
-F 2 "Package_SON:X2SON-8_1.4x1mm_P0.35mm" H 12875 8550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/txs0102" H 12875 9080 50  0001 C CNN
+F 0 "U13" H 13200 8500 50  0000 C CNN
+F 1 "TXB0102DCU" H 13225 8625 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.4x2.1mm_P0.5mm" H 12875 8550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0102.pdf" H 12875 9070 50  0001 C CNN
 	1    12875 9100
 	1    0    0    -1  
 $EndComp

@@ -3925,7 +3925,7 @@ Text Notes 3100 7500 0    157  Italic 31
 Power Regulation
 Text Notes 8800 7500 0    157  Italic 31
 Bulk Connectors
-Text Notes 11900 6850 0    157  Italic 31
+Text Notes 12625 7500 0    157  Italic 31
 Peripherals
 $Comp
 L Connector:TestPoint TP1
