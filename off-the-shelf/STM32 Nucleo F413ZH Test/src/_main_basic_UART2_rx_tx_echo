@@ -1,0 +1,66 @@
+//PB10 UART3 tx
+//PC5 UART3 rx
+//PD5 UART2 tx
+//PD6 UART2 rx
+#include "stm32f4xx_hal.h"
+
+void USART2_Init(void);
+void USART2_Write(int ch);
+int USART2_Read(void);
+void delayMs(int delay);
+
+int main(void)
+{
+  USART2_Init();
+  int data;
+  while(1)
+  {
+    data = USART2_Read();
+    if (data != 0xFFF)
+    {
+      USART2_Write(data);
+    }
+    delayMs(10);
+  }
+}
+
+void USART2_Init(void)
+{
+  RCC->AHB1ENR  |= RCC_AHB1ENR_GPIODEN;                                           //enable clk for port D
+  RCC->APB1ENR  |= RCC_APB1ENR_USART2EN;                                          //enable APB1 USART2 clk
+  GPIOD->AFR[0] |= (7 << GPIO_AFRL_AFSEL5_Pos); 
+  GPIOD->AFR[0] |= (7 << GPIO_AFRL_AFSEL6_Pos);   //enable uart af for PD5 and PD6 
+  GPIOD->MODER  |= (2 << GPIO_MODER_MODER5_Pos); 
+  GPIOD->MODER  |= (2 << GPIO_MODER_MODER6_Pos); //set alternate function mode for PD5 and PD6
+  USART2->CR1   |= USART_CR1_UE;                                                  //Enable UART
+  USART2->BRR   |= (104 << 4);                                                    //9600 mantissa @ 16MHz
+  USART2->BRR   |= (3 << 0);                                                      //9600 div @ 16MHz
+  USART2->CR1   |= USART_CR1_TE;
+  USART2->CR1   |= USART_CR1_RE;                                                  //enable tx and rx
+}
+
+void USART2_Write(int ch)
+{
+  while(!(USART2->SR & (1 << 7))){};
+  USART2->DR = (ch & 0xFF);
+}
+
+int USART2_Read(void)
+{
+  int input = 0xFFF;
+  if((USART2->SR & USART_SR_RXNE))
+  {
+    input = USART2->DR;
+  }
+  return input;
+}
+  
+
+void delayMs(int delay)
+{
+  volatile int i;
+  for( ; delay>0; delay--)
+  {
+    for(i=0; i<3175; i++){};
+  }
+}

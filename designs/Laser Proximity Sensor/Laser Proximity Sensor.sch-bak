@@ -1,0 +1,548 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Laserdiode_N_TYPE LD?
+U 1 1 5DC8E456
+P 1725 4125
+F 0 "LD?" V 1675 3775 50  0000 L CNN
+F 1 "Laserdiode_N_TYPE" V 1775 3225 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-3_Window" H 1725 4200 50  0001 C CNN
+F 3 "http://www.egismos.disonhu.com/laser/diode-package.htm" H 1775 4025 50  0001 C CNN
+	1    1725 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DCB97BF
+P 1625 4675
+F 0 "R?" H 1475 4675 50  0000 L CNN
+F 1 "R_US" H 1375 4775 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1665 4665 50  0001 C CNN
+F 3 "~" H 1625 4675 50  0001 C CNN
+	1    1625 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DCB99D0
+P 1625 5075
+F 0 "R?" H 1425 5125 50  0000 L CNN
+F 1 "R_US" H 1375 5025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1665 5065 50  0001 C CNN
+F 3 "~" H 1625 5075 50  0001 C CNN
+	1    1625 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 5225 1725 5225
+Wire Wire Line
+	1825 5225 1825 4975
+Wire Wire Line
+	1625 4925 1625 4875
+Wire Wire Line
+	1625 4525 1625 4425
+Wire Wire Line
+	1825 4575 1825 4425
+Wire Wire Line
+	1725 5225 1725 5325
+Connection ~ 1725 5225
+Wire Wire Line
+	1725 5225 1825 5225
+$Comp
+L power:GND #PWR?
+U 1 1 5DCBA107
+P 1725 5325
+F 0 "#PWR?" H 1725 5075 50  0001 C CNN
+F 1 "GND" H 1730 5152 50  0000 C CNN
+F 2 "" H 1725 5325 50  0001 C CNN
+F 3 "" H 1725 5325 50  0001 C CNN
+	1    1725 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MIC5219YM5 U?
+U 1 1 5DCBA468
+P 1825 3325
+F 0 "U?" V 1779 3529 50  0000 L CNN
+F 1 "MIC5219YM5" V 1870 3529 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1825 3650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf" H 1825 3325 50  0001 C CNN
+	1    1825 3325
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCBB37F
+P 2375 3625
+F 0 "C?" V 2225 3575 50  0000 C CNN
+F 1 "470pF" V 2225 3775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2413 3475 50  0001 C CNN
+F 3 "~" H 2375 3625 50  0001 C CNN
+	1    2375 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DCBBB57
+P 1975 3775
+F 0 "R?" V 2075 3875 50  0000 C CNN
+F 1 "R_US" V 2075 3725 50  0000 C CNN
+F 2 "" V 2015 3765 50  0001 C CNN
+F 3 "~" H 1975 3775 50  0001 C CNN
+	1    1975 3775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1725 3625 1725 3775
+Wire Wire Line
+	1925 3625 2175 3625
+$Comp
+L Device:R_US R?
+U 1 1 5DCBC49F
+P 2375 3775
+F 0 "R?" V 2275 3775 50  0000 C CNN
+F 1 "R_US" V 2275 3625 50  0000 C CNN
+F 2 "" V 2415 3765 50  0001 C CNN
+F 3 "~" H 2375 3775 50  0001 C CNN
+	1    2375 3775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2225 3775 2175 3775
+Wire Wire Line
+	1825 3775 1725 3775
+Connection ~ 1725 3775
+Wire Wire Line
+	1725 3775 1725 3925
+Wire Wire Line
+	2175 3775 2175 3625
+Connection ~ 2175 3775
+Wire Wire Line
+	2175 3775 2125 3775
+Connection ~ 2175 3625
+Wire Wire Line
+	2175 3625 2225 3625
+Wire Wire Line
+	2525 3625 2525 3675
+$Comp
+L Device:CP C?
+U 1 1 5DCBCF38
+P 2375 4025
+F 0 "C?" V 2275 3875 50  0000 C CNN
+F 1 "2.2uF" V 2275 3675 50  0000 C CNN
+F 2 "" H 2413 3875 50  0001 C CNN
+F 3 "~" H 2375 4025 50  0001 C CNN
+	1    2375 4025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1725 3925 2225 3925
+Wire Wire Line
+	2225 3925 2225 4025
+Connection ~ 1725 3925
+Wire Wire Line
+	2525 3675 2675 3675
+Wire Wire Line
+	2675 3675 2675 4025
+Wire Wire Line
+	2675 4025 2525 4025
+Connection ~ 2525 3675
+Wire Wire Line
+	2525 3675 2525 3775
+Wire Wire Line
+	2125 3325 2675 3325
+Wire Wire Line
+	2675 3325 2675 3675
+Connection ~ 2675 3675
+Wire Wire Line
+	2675 3675 2875 3675
+$Comp
+L power:GND #PWR?
+U 1 1 5DCBE929
+P 2875 3675
+F 0 "#PWR?" H 2875 3425 50  0001 C CNN
+F 1 "GND" H 2880 3502 50  0000 C CNN
+F 2 "" H 2875 3675 50  0001 C CNN
+F 3 "" H 2875 3675 50  0001 C CNN
+	1    2875 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 3025 1775 3025
+Wire Wire Line
+	1775 3025 1775 2875
+Connection ~ 1775 3025
+Wire Wire Line
+	1775 3025 1825 3025
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCBFAB4
+P 1775 2875
+F 0 "#PWR?" H 1775 2725 50  0001 C CNN
+F 1 "+5V" H 1790 3048 50  0000 C CNN
+F 2 "" H 1775 2875 50  0001 C CNN
+F 3 "" H 1775 2875 50  0001 C CNN
+	1    1775 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 4875 1475 4875
+Connection ~ 1625 4875
+Wire Wire Line
+	1625 4875 1625 4825
+Wire Wire Line
+	2125 4775 2275 4775
+Text Label 2275 4775 0    50   ~ 0
+EN_Laser
+Text Label 1475 4875 2    50   ~ 0
+V_PM
+$Comp
+L custom-components:AME5268 U?
+U 1 1 5DCCCADE
+P 1650 6800
+F 0 "U?" H 1800 7300 50  0000 R CNN
+F 1 "AME5268" H 2050 7200 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1700 6450 50  0001 L CNN
+F 3 "http://www.ame.com.tw/datasheet/AME5268.pdf" H 1450 7400 50  0001 C CNN
+	1    1650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6800 1150 6800
+Wire Wire Line
+	1450 6400 1350 6400
+$Comp
+L Device:C C?
+U 1 1 5DCCDEED
+P 1000 6400
+F 0 "C?" V 748 6400 50  0000 C CNN
+F 1 "10uF" V 839 6400 50  0000 C CNN
+F 2 "" H 1038 6250 50  0001 C CNN
+F 3 "~" H 1000 6400 50  0001 C CNN
+	1    1000 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCCE089
+P 1000 6800
+F 0 "C?" V 748 6800 50  0000 C CNN
+F 1 "0.1uF" V 839 6800 50  0000 C CNN
+F 2 "" H 1038 6650 50  0001 C CNN
+F 3 "~" H 1000 6800 50  0001 C CNN
+	1    1000 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  6400 850  6800
+Wire Wire Line
+	850  6800 850  7200
+Wire Wire Line
+	850  7200 1100 7200
+Connection ~ 850  6800
+Wire Wire Line
+	850  7200 850  7300
+Connection ~ 850  7200
+$Comp
+L power:GND #PWR?
+U 1 1 5DCCF920
+P 850 7300
+F 0 "#PWR?" H 850 7050 50  0001 C CNN
+F 1 "GND" H 855 7127 50  0000 C CNN
+F 2 "" H 850 7300 50  0001 C CNN
+F 3 "" H 850 7300 50  0001 C CNN
+	1    850  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DCD042C
+P 1500 6250
+F 0 "R?" V 1295 6250 50  0000 C CNN
+F 1 "100k" V 1386 6250 50  0000 C CNN
+F 2 "" V 1540 6240 50  0001 C CNN
+F 3 "~" H 1500 6250 50  0001 C CNN
+	1    1500 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 6250 1650 6400
+Wire Wire Line
+	1350 6250 1350 6400
+Connection ~ 1350 6400
+Wire Wire Line
+	1350 6400 1150 6400
+Wire Wire Line
+	1350 6250 1350 5950
+Connection ~ 1350 6250
+$Comp
+L power:+24V #PWR?
+U 1 1 5DCD1EAC
+P 1350 5950
+F 0 "#PWR?" H 1350 5800 50  0001 C CNN
+F 1 "+24V" H 1365 6123 50  0000 C CNN
+F 2 "" H 1350 5950 50  0001 C CNN
+F 3 "" H 1350 5950 50  0001 C CNN
+	1    1350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCD2FAC
+P 2250 6650
+F 0 "C?" H 2365 6696 50  0000 L CNN
+F 1 "10nF" H 2365 6605 50  0000 L CNN
+F 2 "" H 2288 6500 50  0001 C CNN
+F 3 "~" H 2250 6650 50  0001 C CNN
+	1    2250 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6800 2250 6800
+Wire Wire Line
+	2250 6500 2050 6500
+Wire Wire Line
+	2050 6500 2050 6600
+$Comp
+L Device:L L?
+U 1 1 5DCD71D6
+P 2750 6800
+F 0 "L?" V 2572 6800 50  0000 C CNN
+F 1 "15uH" V 2663 6800 50  0000 C CNN
+F 2 "" H 2750 6800 50  0001 C CNN
+F 3 "~" H 2750 6800 50  0001 C CNN
+	1    2750 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 6800 2250 6800
+Connection ~ 2250 6800
+Wire Wire Line
+	2900 6800 3100 6800
+$Comp
+L Device:C C?
+U 1 1 5DCD9093
+P 2300 7000
+F 0 "C?" V 2200 6900 50  0000 C CNN
+F 1 "3.3nF" V 2200 7150 50  0000 C CNN
+F 2 "" H 2338 6850 50  0001 C CNN
+F 3 "~" H 2300 7000 50  0001 C CNN
+	1    2300 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 7000 2050 7000
+$Comp
+L Device:R_US R?
+U 1 1 5DCDA9A2
+P 2750 7000
+F 0 "R?" V 2650 6900 50  0000 C CNN
+F 1 "6.98k" V 2650 7100 50  0000 C CNN
+F 2 "" V 2790 6990 50  0001 C CNN
+F 3 "~" H 2750 7000 50  0001 C CNN
+	1    2750 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 7000 2450 7000
+Wire Wire Line
+	2900 7000 3100 7000
+Wire Wire Line
+	3100 7000 3100 6800
+Wire Wire Line
+	3100 7300 2450 7300
+Connection ~ 3100 7000
+$Comp
+L Device:R_US R?
+U 1 1 5DCDE242
+P 2300 7300
+F 0 "R?" V 2200 7100 50  0000 C CNN
+F 1 "R_US" V 2186 7300 50  0000 C CNN
+F 2 "" V 2340 7290 50  0001 C CNN
+F 3 "~" H 2300 7300 50  0001 C CNN
+	1    2300 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DCDE4C3
+P 1500 7400
+F 0 "R?" V 1400 7200 50  0000 C CNN
+F 1 "R_US" V 1386 7400 50  0000 C CNN
+F 2 "" V 1540 7390 50  0001 C CNN
+F 3 "~" H 1500 7400 50  0001 C CNN
+	1    1500 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 7300 1650 7300
+Wire Wire Line
+	1650 7300 1650 7200
+Wire Wire Line
+	1650 7300 1650 7400
+Connection ~ 1650 7300
+Wire Wire Line
+	1350 7400 1100 7400
+Wire Wire Line
+	1100 7400 1100 7200
+Connection ~ 1100 7200
+Wire Wire Line
+	1100 7200 1450 7200
+Wire Wire Line
+	3100 6800 3250 6800
+Connection ~ 3100 6800
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCE56C8
+P 3250 6800
+F 0 "#PWR?" H 3250 6650 50  0001 C CNN
+F 1 "+5V" H 3265 6973 50  0000 C CNN
+F 2 "" H 3250 6800 50  0001 C CNN
+F 3 "" H 3250 6800 50  0001 C CNN
+	1    3250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCE5E5F
+P 1850 7550
+F 0 "C?" V 2000 7600 50  0000 C CNN
+F 1 "22uF" V 2000 7450 50  0000 C CNN
+F 2 "" H 1888 7400 50  0001 C CNN
+F 3 "~" H 1850 7550 50  0001 C CNN
+	1    1850 7550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 7550 1100 7550
+Wire Wire Line
+	1100 7550 1100 7400
+Connection ~ 1100 7400
+Wire Wire Line
+	2000 7550 3100 7550
+Wire Wire Line
+	3100 7000 3100 7300
+Connection ~ 3100 7300
+Wire Wire Line
+	3100 7300 3100 7550
+$Comp
+L Device:Q_NMOS_DSG Q?
+U 1 1 5E20C751
+P 1925 4775
+F 0 "Q?" H 1525 4575 50  0000 L CNN
+F 1 "Q_NMOS_DSG" H 1325 4675 50  0000 L CNN
+F 2 "" H 2125 4875 50  0001 C CNN
+F 3 "~" H 1925 4775 50  0001 C CNN
+	1    1925 4775
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	700  7675 3425 7675
+Wire Notes Line
+	3425 7675 3425 5650
+Wire Notes Line
+	3425 5650 700  5650
+Wire Notes Line
+	700  5650 700  7675
+Text Notes 3425 5800 2    100  ~ 20
+5V OUT
+Wire Notes Line
+	700  5575 2975 5575
+Wire Notes Line
+	2975 2500 700  2500
+Text Notes 2975 2650 2    100  ~ 20
+Lasing Module
+Wire Notes Line
+	700  2500 700  5575
+Wire Notes Line
+	2975 2500 2975 5575
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5E248D63
+P 5025 3475
+F 0 "TH?" H 5123 3521 50  0000 L CNN
+F 1 "Thermistor_NTC" H 5123 3430 50  0000 L CNN
+F 2 "" H 5025 3525 50  0001 C CNN
+F 3 "~" H 5025 3525 50  0001 C CNN
+	1    5025 3475
+	1    0    0    -1  
+$EndComp
+Text Notes 1625 3225 2    50   ~ 0
+Adjustable LDO
+Text Label 1625 3775 2    50   ~ 0
+NTC_SUPPLY
+Wire Wire Line
+	1725 3775 1625 3775
+Text Label 5025 3225 0    50   ~ 0
+NTC_SUPPLY
+Wire Wire Line
+	5025 3225 5025 3275
+Wire Wire Line
+	5025 3625 5025 3675
+$Comp
+L Device:R R?
+U 1 1 5E250EB3
+P 5025 3875
+F 0 "R?" H 5095 3921 50  0000 L CNN
+F 1 "20K" H 5095 3830 50  0000 L CNN
+F 2 "" V 4955 3875 50  0001 C CNN
+F 3 "~" H 5025 3875 50  0001 C CNN
+	1    5025 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E27CEB2
+P 4725 3475
+F 0 "R?" H 4575 3475 50  0000 L CNN
+F 1 "23.2K" V 4825 3375 50  0000 L CNN
+F 2 "" V 4655 3475 50  0001 C CNN
+F 3 "~" H 4725 3475 50  0001 C CNN
+	1    4725 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 3625 4725 3675
+Wire Wire Line
+	4725 3675 5025 3675
+Connection ~ 5025 3675
+Wire Wire Line
+	5025 3675 5025 3725
+Wire Wire Line
+	4725 3325 4725 3275
+Wire Wire Line
+	4725 3275 5025 3275
+Connection ~ 5025 3275
+Wire Wire Line
+	5025 3275 5025 3325
+Wire Wire Line
+	5025 4025 5025 4075
+$Comp
+L power:GND #PWR?
+U 1 1 5E282160
+P 5025 4075
+F 0 "#PWR?" H 5025 3825 50  0001 C CNN
+F 1 "GND" H 5030 3902 50  0000 C CNN
+F 2 "" H 5025 4075 50  0001 C CNN
+F 3 "" H 5025 4075 50  0001 C CNN
+	1    5025 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 3675 5125 3675
+Text Label 5125 3675 0    50   ~ 0
+NTC_ADC
+$EndSCHEMATC

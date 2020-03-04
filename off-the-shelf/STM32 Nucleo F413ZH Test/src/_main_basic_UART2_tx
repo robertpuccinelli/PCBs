@@ -1,0 +1,49 @@
+//UNABLE TO GET USART3 TO WORK THROUGH EMBEDDED STLINK
+//NEEDED EXTERNAL USB-to-UART DONGLE ATTACHED TO CN9
+
+//PD5 UART2 tx
+//PD6 UART2 rx
+#include "stm32f4xx_hal.h"
+
+void USART2_Init(void);
+void USART_Write(int ch);
+void delayMs(int delay);
+
+int main(void)
+{
+  USART2_Init();
+
+  while(1)
+  {
+    USART_Write('Y');
+    USART_Write('o');
+    delayMs(100);
+  }
+}
+
+void USART2_Init(void)
+{
+  RCC->AHB1ENR  |= RCC_AHB1ENR_GPIODEN;              //enable clk for port D
+  RCC->APB1ENR  |= RCC_APB1ENR_USART2EN;             //enable APB1 USART2 clk
+  GPIOD->AFR[0] |= (7 << GPIO_AFRL_AFSEL5_Pos);      //enable uart af for PD5
+  GPIOD->MODER  |= (2 << GPIO_MODER_MODER5_Pos);     //set alternate function mode for PD5
+  USART2->CR1   |= USART_CR1_UE;                    //Enable UART
+  USART2->BRR   |= (104 << 4);                      //9600 mantissa @ 16MHz
+  USART2->BRR   |= (3 << 0);                        //9600 div @ 16MHz
+  USART2->CR1   |= USART_CR1_TE;                    //enable tx
+}
+
+void USART_Write(int ch)
+{
+  while(!(USART2->SR & (1 << 7))){};
+  USART2->DR = (ch);
+}
+
+void delayMs(int delay)
+{
+  volatile int i;
+  for( ; delay>0; delay--)
+  {
+    for(i=0; i<3175; i++){};
+  }
+}

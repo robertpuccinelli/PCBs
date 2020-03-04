@@ -1,0 +1,23 @@
+//User Button 1 on PC13
+//Blue LED on PB7
+
+#include "stm32f4xx_hal.h"
+
+int main(void)
+{
+  RCC->AHB1ENR |= 0x6;          //enable clk on ports B and C
+  GPIOB->MODER |= 0x4000;       //PB7 output mode
+  GPIOC->MODER &= ~0x12000000;  //clear bits in PC13 mode register
+
+  while(1)
+  {
+    if (GPIOC->IDR & 0x2000)    //If PC13 high
+    {
+      GPIOB->BSRR = 0x80;       //Set PB7
+    }
+    else
+    {
+      GPIOB->BSRR = 0x800000;   //Reset PB7
+    }
+  }
+}

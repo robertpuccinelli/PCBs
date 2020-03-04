@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Arduino-DUE-V03-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Arduino-DUE-V03-eagle-import.lib)(options "")(descr ""))
+  (lib (name Arduino-DUE-V03-rescue)(type Legacy)(uri ${KIPRJMOD}/Arduino-DUE-V03-rescue.lib)(options "")(descr ""))
+)
