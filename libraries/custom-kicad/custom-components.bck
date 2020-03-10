@@ -15,6 +15,11 @@ $CMP LD29300
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/a8/32/8d/aa/91/ea/41/a3/CD00003208.pdf/files/CD00003208.pdf/jcr:content/translations/en.CD00003208.pdf
 $ENDCMP
 #
+$CMP RT9059
+K LDO Voltage Regulator
+F https://www.richtek.com/assets/product_file/RT9059/DS9059-10.pdf
+$ENDCMP
+#
 $CMP SIM5360
 D RF cellular transceiver
 F https://simcom.ee/documents/SIM5360/SIM5360_Hardware_Design_V1.06.pdf
@@ -22,6 +27,11 @@ $ENDCMP
 #
 $CMP SIM868
 F https://datasheet.lcsc.com/szlcsc/1811011410_SIMCom-Wireless-Solutions-SIM868_C89549.pdf
+$ENDCMP
+#
+$CMP TXS0108ERGY
+K Bidirectional level shifter
+F http://www.ti.com/lit/ds/symlink/txs0108e.pdf
 $ENDCMP
 #
 #End Doc Library
