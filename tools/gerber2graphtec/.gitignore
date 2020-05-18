@@ -1,0 +1,12 @@
+*~
+*.pyc
+*.print
+*.ger
+*.pdf
+*.pic
+*.txt
+*.spec
+*.exe
+*.bat
+/build
+/dist

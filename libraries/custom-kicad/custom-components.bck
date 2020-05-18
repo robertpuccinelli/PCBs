@@ -29,6 +29,17 @@ $CMP SIM868
 F https://datasheet.lcsc.com/szlcsc/1811011410_SIMCom-Wireless-Solutions-SIM868_C89549.pdf
 $ENDCMP
 #
+$CMP SST39VF3201C-70-4I-B3KE
+D Silicon Storage Technology (SSF) 512k x 8 Flash ROM
+K 512k flash rom
+F https://static6.arrow.com/aropdfconversion/12c2a081dfb85ceaf3ef169d50b9c70a9a7337b3/237jp553532.pdf
+$ENDCMP
+#
+$CMP TPS61165DRV
+D Low Pass PWM LED Driver
+F https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-TPS61165DRVR_C122568.pdf
+$ENDCMP
+#
 $CMP TXS0108ERGY
 K Bidirectional level shifter
 F http://www.ti.com/lit/ds/symlink/txs0108e.pdf
