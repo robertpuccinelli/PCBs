@@ -730,17 +730,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 6450 3450 6350
 $Comp
-L Device:Q_NMOS_GSD Q1
-U 1 1 602577E4
-P 3550 6650
-F 0 "Q1" H 3400 6500 50  0000 L CNN
-F 1 "AO3400A" H 3150 6600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 6750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 3550 6650 50  0001 C CNN
-	1    3550 6650
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+BATT #PWR0117
 U 1 1 602437D8
 P 4100 6650
@@ -1107,9 +1096,9 @@ L Device:Q_NMOS_GSD Q2
 U 1 1 60502362
 P 4500 6650
 F 0 "Q2" H 4300 6450 50  0000 L CNN
-F 1 "AO3400A" H 4100 6550 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 6750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 4500 6650 50  0001 C CNN
+F 1 "BSS138W" H 3950 6550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4700 6750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 4500 6650 50  0001 C CNN
 	1    4500 6650
 	-1   0    0    1   
 $EndComp
@@ -1394,4 +1383,15 @@ Text Notes 8400 4900 0    79   ~ 16
 3V3
 Text Notes 10100 4900 0    79   ~ 16
 V_IN
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5EC8940C
+P 3550 6650
+F 0 "Q1" H 3350 6450 50  0000 L CNN
+F 1 "BSS138W" H 3050 6550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3750 6750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 3550 6650 50  0001 C CNN
+	1    3550 6650
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

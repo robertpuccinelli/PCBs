@@ -11,8 +11,17 @@ D 6.1V Transnil clamping diode
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/cd/9b/8d/39/1f/d4/43/ba/CD00064033.pdf/files/CD00064033.pdf/jcr:content/translations/en.CD00064033.pdf
 $ENDCMP
 #
+$CMP L6932D1.2
+D ULDO Adj. Voltage Regulator
+F https://www.st.com/content/ccc/resource/technical/document/datasheet/41/7a/35/60/5b/95/4f/48/CD00002172.pdf/files/CD00002172.pdf/jcr:content/translations/en.CD00002172.pdf
+$ENDCMP
+#
 $CMP LD29300
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/a8/32/8d/aa/91/ea/41/a3/CD00003208.pdf/files/CD00003208.pdf/jcr:content/translations/en.CD00003208.pdf
+$ENDCMP
+#
+$CMP NCV891330
+F https://www.onsemi.com/pub/Collateral/NCV891330-D.PDF
 $ENDCMP
 #
 $CMP RT9059
