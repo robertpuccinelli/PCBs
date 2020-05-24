@@ -20,6 +20,15 @@ $CMP LD29300
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/a8/32/8d/aa/91/ea/41/a3/CD00003208.pdf/files/CD00003208.pdf/jcr:content/translations/en.CD00003208.pdf
 $ENDCMP
 #
+$CMP NC7WZ14
+D Dual Schmidt Inverter
+F https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NC7WZ14P6X_C50793.pdf
+$ENDCMP
+#
+$CMP NCV891330
+F https://www.onsemi.com/pub/Collateral/NCV891330-D.PDF
+$ENDCMP
+#
 $CMP RT9059
 K LDO Voltage Regulator
 F https://www.richtek.com/assets/product_file/RT9059/DS9059-10.pdf

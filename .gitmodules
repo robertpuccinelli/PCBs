@@ -13,3 +13,6 @@
 [submodule "tools/xess_fp_wizard"]
 	path = tools/xess_fp_wizard
 	url = https://github.com/xesscorp/xess_fp_wizard
+[submodule "OSHW_Logo"]
+	path = OSHW_Logo
+	url = https://github.com/OSHW/logo.git

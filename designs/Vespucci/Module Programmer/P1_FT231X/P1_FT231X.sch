@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 1 7
 Title "P1 - Module Programmer/Debugger"
 Date "2020-05-23"
 Rev "B"
@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_02x18_Row_Letter_First J3
 U 1 1 6000BAE0
-P 9150 2550
-F 0 "J3" H 9200 3567 50  0000 C CNN
-F 1 "PCIe Connector" H 9200 3476 50  0000 C CNN
-F 2 "Custom_Footprints:UMAX_3091-10100T_PCIe_x1" H 9150 2550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_UMAX-3091-10100T_C444344.pdf" H 9150 2550 50  0001 C CNN
-	1    9150 2550
+P 9450 2450
+F 0 "J3" H 9500 3467 50  0000 C CNN
+F 1 "PCIe Connector" H 9500 3376 50  0000 C CNN
+F 2 "Custom_Footprints:UMAX_3091-10100T_PCIe_x1" H 9450 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_UMAX-3091-10100T_C444344.pdf" H 9450 2450 50  0001 C CNN
+	1    9450 2450
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -197,28 +197,28 @@ Wire Wire Line
 Wire Wire Line
 	2250 2350 2250 2300
 Wire Wire Line
-	8850 3050 8400 3050
-Text Label 8400 3050 0    50   ~ 0
+	9150 2950 8700 2950
+Text Label 8700 2950 0    50   ~ 0
 hTX
 Wire Wire Line
-	8850 3150 8400 3150
-Text Label 8400 3150 0    50   ~ 0
+	9150 3050 8700 3050
+Text Label 8700 3050 0    50   ~ 0
 hRTS
 Wire Wire Line
-	9350 3350 9650 3350
-Text Label 9650 3350 2    50   ~ 0
+	9650 3250 9950 3250
+Text Label 9950 3250 2    50   ~ 0
 hCTS
 Wire Wire Line
-	9350 2950 9650 2950
-Text Label 9650 2950 2    50   ~ 0
+	9650 2850 9950 2850
+Text Label 9950 2850 2    50   ~ 0
 hDTR
 Wire Wire Line
-	9350 3050 9650 3050
-Text Label 9650 3050 2    50   ~ 0
+	9650 2950 9950 2950
+Text Label 9950 2950 2    50   ~ 0
 hDCD
 Wire Wire Line
-	9350 3250 9650 3250
-Text Label 9650 3250 2    50   ~ 0
+	9650 3150 9950 3150
+Text Label 9950 3150 2    50   ~ 0
 hRX
 Wire Wire Line
 	2350 1700 2250 1700
@@ -249,60 +249,60 @@ F 3 "" H 3150 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 2050 8750 2050
+	9150 1950 9050 1950
 Wire Wire Line
-	8750 2050 8750 2350
+	9050 1950 9050 2250
 Wire Wire Line
-	8750 2350 8850 2350
+	9050 2250 9150 2250
 Wire Wire Line
-	8750 2350 8750 2950
+	9050 2250 9050 2850
 Wire Wire Line
-	8750 2950 8850 2950
-Connection ~ 8750 2350
+	9050 2850 9150 2850
+Connection ~ 9050 2250
 Wire Wire Line
-	8750 2950 8750 3250
+	9050 2850 9050 3150
 Wire Wire Line
-	8750 3250 8850 3250
-Connection ~ 8750 2950
+	9050 3150 9150 3150
+Connection ~ 9050 2850
 Wire Wire Line
-	8750 3450 8850 3450
+	9050 3350 9150 3350
 Wire Wire Line
-	9350 3450 9450 3450
+	9650 3350 9750 3350
 Wire Wire Line
-	9450 3450 9450 3150
+	9750 3350 9750 3050
 Wire Wire Line
-	9450 3150 9350 3150
+	9750 3050 9650 3050
 Wire Wire Line
-	9450 3150 9450 2850
+	9750 3050 9750 2750
 Wire Wire Line
-	9450 2850 9350 2850
-Connection ~ 9450 3150
+	9750 2750 9650 2750
+Connection ~ 9750 3050
 Wire Wire Line
-	9450 2850 9450 2050
+	9750 2750 9750 1950
 Wire Wire Line
-	9450 2050 9350 2050
-Connection ~ 9450 2850
+	9750 1950 9650 1950
+Connection ~ 9750 2750
 Wire Wire Line
-	9450 3450 9450 3550
+	9750 3350 9750 3450
 Wire Wire Line
-	9450 3550 9100 3550
+	9750 3450 9400 3450
 Wire Wire Line
-	8750 3550 8750 3450
-Connection ~ 9450 3450
+	9050 3450 9050 3350
+Connection ~ 9750 3350
 Wire Wire Line
-	9100 3550 9100 3650
-Connection ~ 9100 3550
+	9400 3450 9400 3550
+Connection ~ 9400 3450
 Wire Wire Line
-	9100 3550 8750 3550
+	9400 3450 9050 3450
 $Comp
 L power:GND #PWR0108
 U 1 1 600408EE
-P 9100 3650
-F 0 "#PWR0108" H 9100 3400 50  0001 C CNN
-F 1 "GND" H 9105 3477 50  0000 C CNN
-F 2 "" H 9100 3650 50  0001 C CNN
-F 3 "" H 9100 3650 50  0001 C CNN
-	1    9100 3650
+P 9400 3550
+F 0 "#PWR0108" H 9400 3300 50  0001 C CNN
+F 1 "GND" H 9405 3377 50  0000 C CNN
+F 2 "" H 9400 3550 50  0001 C CNN
+F 3 "" H 9400 3550 50  0001 C CNN
+	1    9400 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,30 +352,30 @@ F 3 "" H 5300 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 2150 9900 2150
-Text Label 9900 2150 2    50   ~ 0
+	9650 2050 10200 2050
+Text Label 10200 2050 2    50   ~ 0
 TCLK
 Wire Wire Line
-	9350 2250 9900 2250
-Text Label 9900 2250 2    50   ~ 0
+	9650 2150 10200 2150
+Text Label 10200 2150 2    50   ~ 0
 TDI
 Wire Wire Line
-	9350 2350 9900 2350
-Text Label 9900 2350 2    50   ~ 0
+	9650 2250 10200 2250
+Text Label 10200 2250 2    50   ~ 0
 TDO
 Wire Wire Line
-	9350 2450 9900 2450
-Text Label 9900 2450 2    50   ~ 0
+	9650 2350 10200 2350
+Text Label 10200 2350 2    50   ~ 0
 TMS
 Wire Wire Line
-	9350 2650 9550 2650
+	9650 2550 9850 2550
 Wire Wire Line
-	9550 2650 9550 2550
+	9850 2550 9850 2450
 Wire Wire Line
-	9350 2550 9550 2550
-Connection ~ 9550 2550
+	9650 2450 9850 2450
+Connection ~ 9850 2450
 Wire Wire Line
-	9550 2550 9550 1700
+	9850 2450 9850 1600
 Wire Wire Line
 	2350 2300 2250 2300
 Connection ~ 2250 2300
@@ -900,98 +900,98 @@ Wire Wire Line
 	5300 2200 5300 2400
 NoConn ~ 5500 2300
 Wire Wire Line
-	8850 3350 8400 3350
-Text Label 8400 3350 0    50   ~ 0
+	9150 3250 8700 3250
+Text Label 8700 3250 0    50   ~ 0
 PRSNT2
 Wire Wire Line
-	8750 3250 8750 3450
-Connection ~ 8750 3250
-Connection ~ 8750 3450
+	9050 3150 9050 3350
+Connection ~ 9050 3150
+Connection ~ 9050 3350
 Wire Wire Line
-	9350 1750 9900 1750
-Text Label 9900 1750 2    50   ~ 0
+	9650 1650 10200 1650
+Text Label 10200 1650 2    50   ~ 0
 PRSNT1
 Wire Wire Line
-	8850 2550 8400 2550
-Text Label 8400 2550 0    50   ~ 0
+	9150 2450 8700 2450
+Text Label 8700 2450 0    50   ~ 0
 TRST
 Wire Wire Line
-	8850 2450 8650 2450
+	9150 2350 8950 2350
 Wire Wire Line
-	8650 2450 8650 2650
+	8950 2350 8950 2550
 Wire Wire Line
-	8650 2650 8850 2650
+	8950 2550 9150 2550
 Wire Wire Line
-	8650 2450 8650 1700
-Connection ~ 8650 2450
+	8950 2350 8950 1600
+Connection ~ 8950 2350
 $Comp
 L power:VBUS #PWR0124
 U 1 1 60370127
-P 8650 1700
-F 0 "#PWR0124" H 8650 1550 50  0001 C CNN
-F 1 "VBUS" H 8650 1850 50  0000 C CNN
-F 2 "" H 8650 1700 50  0001 C CNN
-F 3 "" H 8650 1700 50  0001 C CNN
-	1    8650 1700
+P 8950 1600
+F 0 "#PWR0124" H 8950 1450 50  0001 C CNN
+F 1 "VBUS" H 8950 1750 50  0000 C CNN
+F 2 "" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VBUS #PWR0125
 U 1 1 60371283
-P 9550 1700
-F 0 "#PWR0125" H 9550 1550 50  0001 C CNN
-F 1 "VBUS" H 9550 1850 50  0000 C CNN
-F 2 "" H 9550 1700 50  0001 C CNN
-F 3 "" H 9550 1700 50  0001 C CNN
-	1    9550 1700
+P 9850 1600
+F 0 "#PWR0125" H 9850 1450 50  0001 C CNN
+F 1 "VBUS" H 9850 1750 50  0000 C CNN
+F 2 "" H 9850 1600 50  0001 C CNN
+F 3 "" H 9850 1600 50  0001 C CNN
+	1    9850 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 1850 9450 1850
+	9650 1750 9750 1750
 Wire Wire Line
-	9450 1850 9450 1950
+	9750 1750 9750 1850
 Wire Wire Line
-	9450 1950 9350 1950
+	9750 1850 9650 1850
 Wire Wire Line
-	9450 1850 9450 1500
-Connection ~ 9450 1850
+	9750 1750 9750 1400
+Connection ~ 9750 1750
 $Comp
 L power:+BATT #PWR0126
 U 1 1 603A9D4E
-P 9450 1500
-F 0 "#PWR0126" H 9450 1350 50  0001 C CNN
-F 1 "+BATT" H 9465 1673 50  0000 C CNN
-F 2 "" H 9450 1500 50  0001 C CNN
-F 3 "" H 9450 1500 50  0001 C CNN
-	1    9450 1500
+P 9750 1400
+F 0 "#PWR0126" H 9750 1250 50  0001 C CNN
+F 1 "+BATT" H 9765 1573 50  0000 C CNN
+F 2 "" H 9750 1400 50  0001 C CNN
+F 3 "" H 9750 1400 50  0001 C CNN
+	1    9750 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 1750 8750 1750
+	9150 1650 9050 1650
 Wire Wire Line
-	8750 1750 8750 1850
+	9050 1650 9050 1750
 Wire Wire Line
-	8750 1850 8850 1850
+	9050 1750 9150 1750
 Wire Wire Line
-	8750 1750 8750 1500
-Connection ~ 8750 1750
+	9050 1650 9050 1400
+Connection ~ 9050 1650
 $Comp
 L power:+BATT #PWR0127
 U 1 1 603B7CC2
-P 8750 1500
-F 0 "#PWR0127" H 8750 1350 50  0001 C CNN
-F 1 "+BATT" H 8765 1673 50  0000 C CNN
-F 2 "" H 8750 1500 50  0001 C CNN
-F 3 "" H 8750 1500 50  0001 C CNN
-	1    8750 1500
+P 9050 1400
+F 0 "#PWR0127" H 9050 1250 50  0001 C CNN
+F 1 "+BATT" H 9065 1573 50  0000 C CNN
+F 2 "" H 9050 1400 50  0001 C CNN
+F 3 "" H 9050 1400 50  0001 C CNN
+	1    9050 1400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8850 1950
-NoConn ~ 8850 2150
-NoConn ~ 8850 2250
+NoConn ~ 9150 1850
+NoConn ~ 9150 2050
+NoConn ~ 9150 2150
 Wire Wire Line
-	8850 2850 8400 2850
-Text Label 8400 2850 0    50   ~ 0
+	9150 2750 8700 2750
+Text Label 8700 2750 0    50   ~ 0
 hRI
 $Comp
 L 74xGxx:74AHC1G00 U2
@@ -1151,8 +1151,8 @@ F 3 "" H 4400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 2750 9800 2750
-Text Label 9800 2750 2    50   ~ 0
+	9650 2650 10100 2650
+Text Label 10100 2650 2    50   ~ 0
 PWR_OK
 Text Label 5050 6650 2    50   ~ 0
 PWR_OK
@@ -1209,8 +1209,8 @@ Wire Wire Line
 Wire Wire Line
 	5400 2000 5500 2000
 Wire Wire Line
-	8850 2750 8400 2750
-Text Label 8400 2750 0    50   ~ 0
+	9150 2650 8700 2650
+Text Label 8700 2650 0    50   ~ 0
 SW_PWR
 Wire Wire Line
 	3750 2600 4050 2600
@@ -1282,7 +1282,7 @@ F 3 "" H 6050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7000 7050 0    50   ~ 0
-1. VBUS is 3V3 from a 300mA LDO.\n2. FTDI 3V3 OUT supports up to 50mA output. Each 3V3 LED is 5mA.\n3. 10 pin compact JTAG header follows Black Magic Probe pinning. SWD pin header is for other devices.\n4. If target needs VBUS, power with USB and enable via JTAG/SWD/FTDI.\n5. Rev A had LED NMOS S and D flipped\n6. UMAX PCIe connector had some holes 0.3mm offset
+1. VBUS is 3V3 from a 300mA LDO.\n2. FTDI 3V3 OUT supports up to 50mA output. Each 3V3 LED is 5mA.\n3. 10 pin compact JTAG header follows Black Magic Probe pinning. SWD pin header is for other devices.\n4. If target needs VBUS, power with USB and enable via JTAG/SWD/FTDI.\n5. Rev A had LED NMOS S and D flipped\n6. REV A UMAX PCIe connector had holes offset by 0.3mm
 Wire Wire Line
 	3750 2900 4050 2900
 Text Label 4050 2900 2    50   ~ 0
@@ -1361,7 +1361,7 @@ F 3 "" H 7850 5400 50  0001 C CNN
 $EndComp
 Text Notes 5400 900  0    98   ~ 20
 JTAG/SWD Interface
-Text Notes 8500 900  0    98   ~ 20
+Text Notes 8850 900  0    98   ~ 20
 PCIe Interface
 Text Notes 2500 4500 0    98   ~ 20
 LEDs
@@ -1393,5 +1393,16 @@ F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3750 6750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 3550 6650 50  0001 C CNN
 	1    3550 6650
 	-1   0    0    -1  
+$EndComp
+$Comp
+L custom-components:OSHW_logo G1
+U 1 1 5ECB2542
+P 11100 7250
+F 0 "G1" H 11100 7180 60  0001 C CNN
+F 1 "OSHW_logo" H 11100 7320 60  0001 C CNN
+F 2 "Custom_Footprints:OSHW_logo" H 11100 7250 50  0001 C CNN
+F 3 "" H 11100 7250 50  0001 C CNN
+	1    11100 7250
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

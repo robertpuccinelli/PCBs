@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/Users/robby/Git/PCBs/designs/Vespucci/Module Programmer/P1_FT231X/P1_FT231X.sch")
-    (date "Saturday, May 23, 2020 at 09:59:24 AM")
+    (date "Saturday, May 23, 2020 at 10:17:21 PM")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
