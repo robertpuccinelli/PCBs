@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -19,10 +19,11 @@ U 1 1 5ECC709A
 P 9850 3200
 AR Path="/5ECC709A" Ref="J?"  Part="1" 
 AR Path="/5ECC290F/5ECC709A" Ref="J?"  Part="1" 
+AR Path="/5EE97019/5ECC290F/5ECC709A" Ref="J?"  Part="1" 
 F 0 "J?" H 9878 3176 50  0000 L CNN
 F 1 "FFC_FT5446" H 9878 3085 50  0000 L CNN
-F 2 "" H 9850 3200 50  0001 C CNN
-F 3 "~" H 9850 3200 50  0001 C CNN
+F 2 "Custom_Footprints:Amphenol_62674-08" H 9850 3200 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/62674.pdf" H 9850 3200 50  0001 C CNN
 	1    9850 3200
 	1    0    0    -1  
 $EndComp
@@ -32,10 +33,11 @@ U 1 1 5ECC70A0
 P 6150 4000
 AR Path="/5ECC70A0" Ref="J?"  Part="1" 
 AR Path="/5ECC290F/5ECC70A0" Ref="J?"  Part="1" 
+AR Path="/5EE97019/5ECC290F/5ECC70A0" Ref="J?"  Part="1" 
 F 0 "J?" H 6178 3976 50  0000 L CNN
 F 1 "FFC_ILI6122" H 6178 3885 50  0000 L CNN
-F 2 "" H 6150 4000 50  0001 C CNN
-F 3 "~" H 6150 4000 50  0001 C CNN
+F 2 "Custom_Footprints:JUSHUO_AFC07-S40" H 6150 4000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/JUSHUO-AFC07-S40ECA-00_C262648.pdf" H 6150 4000 50  0001 C CNN
 	1    6150 4000
 	1    0    0    -1  
 $EndComp
@@ -45,6 +47,7 @@ U 1 1 5ECC7094
 P 2900 3000
 AR Path="/5ECC7094" Ref="U?"  Part="1" 
 AR Path="/5ECC290F/5ECC7094" Ref="U?"  Part="1" 
+AR Path="/5EE97019/5ECC290F/5ECC7094" Ref="U?"  Part="1" 
 F 0 "U?" H 2900 3200 50  0000 C CNN
 F 1 "TPS61165DRV" H 2900 2800 50  0000 C CNN
 F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias" H 2450 3300 50  0001 C CNN
@@ -68,7 +71,7 @@ Wire Wire Line
 	5850 5000 5950 5000
 Wire Wire Line
 	5850 5400 5950 5400
-Text HLabel 5250 2400 0    50   BiDi ~ 0
+Text HLabel 5250 2400 0    50   Input ~ 0
 LCD_R[0..7]
 Entry Wire Line
 	5450 2500 5350 2400
@@ -120,7 +123,7 @@ Wire Wire Line
 	5450 3200 5950 3200
 Wire Bus Line
 	5350 2400 5250 2400
-Text HLabel 5250 3200 0    50   BiDi ~ 0
+Text HLabel 5250 3200 0    50   Input ~ 0
 LCD_G[0..7]
 Entry Wire Line
 	5450 3300 5350 3200
@@ -172,7 +175,7 @@ Wire Wire Line
 	5450 4000 5950 4000
 Wire Bus Line
 	5350 3200 5250 3200
-Text HLabel 5250 4000 0    50   BiDi ~ 0
+Text HLabel 5250 4000 0    50   Input ~ 0
 LCD_B[0..7]
 Entry Wire Line
 	5450 4100 5350 4000
@@ -369,7 +372,7 @@ L Device:R R?
 U 1 1 5FF00AB4
 P 3400 3450
 F 0 "R?" V 3500 3450 50  0000 C CNN
-F 1 "2R" V 3400 3450 50  0000 C CNN
+F 1 "2R4" V 3400 3450 50  0000 C CNN
 F 2 "" V 3330 3450 50  0001 C CNN
 F 3 "~" H 3400 3450 50  0001 C CNN
 	1    3400 3450
@@ -383,17 +386,6 @@ Wire Wire Line
 Wire Wire Line
 	3250 3450 3250 3350
 Connection ~ 3250 3350
-$Comp
-L power:VBUS #PWR?
-U 1 1 5FF08357
-P 2550 2600
-F 0 "#PWR?" H 2550 2450 50  0001 C CNN
-F 1 "VBUS" H 2565 2773 50  0000 C CNN
-F 2 "" H 2550 2600 50  0001 C CNN
-F 3 "" H 2550 2600 50  0001 C CNN
-	1    2550 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 2600 2550 2700
 Connection ~ 2550 2700
@@ -462,63 +454,88 @@ Wire Wire Line
 Wire Wire Line
 	9650 3000 9550 3000
 Wire Wire Line
-	9550 3000 9550 2950
-Wire Wire Line
 	9550 2900 9650 2900
 Wire Wire Line
 	9650 3500 9550 3500
 Wire Wire Line
-	9550 3500 9550 3550
-Wire Wire Line
 	9550 3600 9650 3600
 Wire Wire Line
-	9550 3550 9250 3550
+	9550 2950 9150 2950
 Wire Wire Line
-	9250 3550 9250 3500
-Connection ~ 9550 3550
-Wire Wire Line
-	9550 3550 9550 3600
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5FF6FC1C
-P 9250 3500
-F 0 "#PWR?" H 9250 3350 50  0001 C CNN
-F 1 "+3V3" H 9265 3673 50  0000 C CNN
-F 2 "" H 9250 3500 50  0001 C CNN
-F 3 "" H 9250 3500 50  0001 C CNN
-	1    9250 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 2950 9250 2950
-Wire Wire Line
-	9250 2950 9250 3000
-Connection ~ 9550 2950
-Wire Wire Line
-	9550 2950 9550 2900
+	9150 2950 9150 3000
 $Comp
 L power:GND #PWR?
 U 1 1 5FF71F03
-P 9250 3000
-F 0 "#PWR?" H 9250 2750 50  0001 C CNN
-F 1 "GND" H 9255 2827 50  0000 C CNN
-F 2 "" H 9250 3000 50  0001 C CNN
-F 3 "" H 9250 3000 50  0001 C CNN
-	1    9250 3000
+P 9150 3000
+F 0 "#PWR?" H 9150 2750 50  0001 C CNN
+F 1 "GND" H 9150 2850 50  0000 C CNN
+F 2 "" H 9150 3000 50  0001 C CNN
+F 3 "" H 9150 3000 50  0001 C CNN
+	1    9150 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 3400 9450 3400
-Text Label 9450 3400 0    50   ~ 0
-SCL
+	9650 3400 9600 3400
 Wire Wire Line
-	9650 3300 9450 3300
+	9650 3300 9600 3300
+Wire Wire Line
+	9650 3200 9600 3200
+Text Notes 7000 7100 0    50   ~ 0
+Design Notes\n1. Designed for YL050MG-3240\n2. ~INT~ requires input pullup\n3. LED driver 90% eff @ 60mA 12V to 24V\n4. TFT : 60mA max @ 3V3 (200mW)\n5. Backlight : 80mA max @ 20V 90% eff (1800mW) | 40mA typ @ 19V 90% eff (840mW)\n6. Touch Panel : 11mA typ @ 3V3 (36mW)
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF6FC1C
+P 9150 3500
+F 0 "#PWR?" H 9150 3350 50  0001 C CNN
+F 1 "+3V3" H 9100 3650 50  0000 C CNN
+F 2 "" H 9150 3500 50  0001 C CNN
+F 3 "" H 9150 3500 50  0001 C CNN
+	1    9150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3550 9150 3500
+Text HLabel 9600 3100 0    50   Input ~ 0
+~TP_RST
+Wire Wire Line
+	9600 3100 9650 3100
+Text HLabel 9600 3200 0    50   Output ~ 0
+~TP_INT
+Wire Wire Line
+	9550 2900 9550 2950
+Connection ~ 9550 2950
+Wire Wire Line
+	9550 2950 9550 3000
+Wire Wire Line
+	9550 3500 9550 3550
+Wire Wire Line
+	9150 3550 9550 3550
+Connection ~ 9550 3550
+Wire Wire Line
+	9550 3550 9550 3600
+Text HLabel 9600 3300 0    50   BiDi ~ 0
+TP_SDA
+Text HLabel 9600 3400 0    50   Input ~ 0
+TP_SCL
 Wire Bus Line
 	5350 2400 5350 3100
 Wire Bus Line
 	5350 3200 5350 3900
 Wire Bus Line
 	5350 4000 5350 4700
-Text Label 9450 3300 0    50   ~ 0
-SDA
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F7D6978
+P 2550 2600
+F 0 "#PWR?" H 2550 2450 50  0001 C CNN
+F 1 "+BATT" H 2565 2773 50  0000 C CNN
+F 2 "" H 2550 2600 50  0001 C CNN
+F 3 "" H 2550 2600 50  0001 C CNN
+	1    2550 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 2250 2200 0    79   ~ 16
+VIn : 12V
+Text Notes 3000 2200 0    79   ~ 16
+Output : 83mA Max
 $EndSCHEMATC

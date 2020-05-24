@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -19,6 +19,7 @@ U 1 1 5ECDEA39
 P 5500 3150
 AR Path="/5ECDEA39" Ref="U?"  Part="1" 
 AR Path="/5ECC7549/5ECDEA39" Ref="U?"  Part="1" 
+AR Path="/5EE97019/5ECC7549/5ECDEA39" Ref="U?"  Part="1" 
 F 0 "U?" V 4100 5850 50  0000 R CNN
 F 1 "STM32F429IGTx" V 5500 3450 50  0000 R CNN
 F 2 "Package_QFP:LQFP-176_24x24mm_P0.5mm" H 4200 -1150 50  0001 R CNN
@@ -56,7 +57,7 @@ Text Label 9200 4950 1    50   ~ 0
 LCD_VSYNC
 Text Label 9000 4950 1    50   ~ 0
 LCD_G2
-Text Label 7900 4950 1    50   ~ 0
+Text Label 5300 1250 3    50   ~ 0
 LCD_R3
 Text Label 7800 4950 1    50   ~ 0
 LCD_R6
@@ -125,7 +126,7 @@ LCD_HSYNC
 Text Label 5500 4950 1    50   ~ 0
 LCD_G6
 Text Label 8800 4950 1    50   ~ 0
-USART1_CK
+USART_DSR
 Text Label 8700 4950 1    50   ~ 0
 USART1_TX
 Text Label 8600 4950 1    50   ~ 0
@@ -167,7 +168,7 @@ LCD_B1
 Text Label 7600 4950 1    50   ~ 0
 JTDO
 Text Label 7500 4950 1    50   ~ 0
-nJTRST
+~JTRST
 Text Label 7100 4950 1    50   ~ 0
 LCD_B6
 Text Label 7000 4950 1    50   ~ 0
@@ -339,7 +340,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 4550 9000 4950
 Wire Wire Line
-	7900 4550 7900 4950
+	5300 1650 5300 1250
 Wire Wire Line
 	7800 4550 7800 4950
 Wire Wire Line
@@ -1288,20 +1289,6 @@ Connection ~ 8900 5550
 Text Label 9100 5550 2    50   ~ 0
 RST
 Wire Wire Line
-	8600 5550 8600 5450
-Connection ~ 8600 5550
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5F6736B0
-P 8600 5450
-F 0 "#PWR?" H 8600 5300 50  0001 C CNN
-F 1 "+3V3" H 8615 5623 50  0000 C CNN
-F 2 "" H 8600 5450 50  0001 C CNN
-F 3 "" H 8600 5450 50  0001 C CNN
-	1    8600 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	7100 1650 7100 1300
 Entry Wire Line
 	4550 6150 4650 6250
@@ -1351,7 +1338,7 @@ Wire Wire Line
 	3950 6250 3950 6650
 Entry Wire Line
 	3850 6150 3950 6250
-Text HLabel 3650 6150 0    50   BiDi ~ 0
+Text HLabel 3650 6150 0    50   Output ~ 0
 LCD_R[0..7]
 Entry Wire Line
 	4550 6700 4650 6800
@@ -1401,7 +1388,7 @@ Wire Wire Line
 	3950 6800 3950 7200
 Entry Wire Line
 	3850 6700 3950 6800
-Text HLabel 3650 6700 0    50   BiDi ~ 0
+Text HLabel 3650 6700 0    50   Output ~ 0
 LCD_G[0..7]
 Entry Wire Line
 	4550 7250 4650 7350
@@ -1451,7 +1438,7 @@ Wire Wire Line
 	3950 7350 3950 7750
 Entry Wire Line
 	3850 7250 3950 7350
-Text HLabel 3650 7250 0    50   BiDi ~ 0
+Text HLabel 3650 7250 0    50   Output ~ 0
 LCD_B[0..7]
 Text Label 4100 5800 2    50   ~ 0
 LCD_CLK
@@ -1482,35 +1469,35 @@ Wire Wire Line
 Connection ~ 8950 1000
 Wire Wire Line
 	8950 1000 9000 1000
-Text Label 6100 6800 2    50   ~ 0
+Text Label 6200 6600 2    50   ~ 0
 JTMS
 Wire Wire Line
-	5600 6800 6100 6800
-Text HLabel 5600 6800 0    50   Input ~ 0
+	5700 6600 6200 6600
+Text HLabel 5700 6600 0    50   Input ~ 0
 JTMS
-Text HLabel 5600 6700 0    50   Input ~ 0
-nJTRST
-Text HLabel 5600 7000 0    50   Input ~ 0
+Text HLabel 5700 6500 0    50   Input ~ 0
+~JTRST
+Text HLabel 5700 6800 0    50   Input ~ 0
 JTDI
 Wire Wire Line
-	5600 6700 6100 6700
+	5700 6500 6200 6500
 Wire Wire Line
-	5600 7000 6100 7000
-Text Label 6100 6700 2    50   ~ 0
-nJTRST
-Text Label 6100 7000 2    50   ~ 0
+	5700 6800 6200 6800
+Text Label 6200 6500 2    50   ~ 0
+~JTRST
+Text Label 6200 6800 2    50   ~ 0
 JTDI
-Text HLabel 5600 6900 0    50   Input ~ 0
+Text HLabel 5700 6700 0    50   Input ~ 0
 JTCK
 Wire Wire Line
-	5600 6900 6100 6900
-Text Label 6100 6900 2    50   ~ 0
+	5700 6700 6200 6700
+Text Label 6200 6700 2    50   ~ 0
 JTCK
-Text HLabel 5600 7100 0    50   Output ~ 0
+Text HLabel 5700 6900 0    50   Output ~ 0
 JTDO
 Wire Wire Line
-	5600 7100 6100 7100
-Text Label 6100 7100 2    50   ~ 0
+	5700 6900 6200 6900
+Text Label 6200 6900 2    50   ~ 0
 JTDO
 Text HLabel 1150 6150 0    50   Output ~ 0
 FMC_RST
@@ -1518,35 +1505,29 @@ Wire Wire Line
 	1150 6150 1550 6150
 Text Label 1550 6150 2    50   ~ 0
 NOR_RST
-Text Label 6100 7400 2    50   ~ 0
+Text Label 6200 7100 2    50   ~ 0
 USART1_TX
 Wire Wire Line
-	5600 7400 6100 7400
-Text HLabel 5600 7400 0    50   Output ~ 0
+	5700 7100 6200 7100
+Text HLabel 5700 7100 0    50   Output ~ 0
 USART_TX
-Text HLabel 5600 7300 0    50   BiDi ~ 0
-USART_CK
-Text HLabel 5600 7600 0    50   Input ~ 0
+Text HLabel 5700 7300 0    50   Input ~ 0
 USART_CTS
 Wire Wire Line
-	5600 7300 6100 7300
-Wire Wire Line
-	5600 7600 6100 7600
-Text Label 6100 7300 2    50   ~ 0
-USART1_CK
-Text Label 6100 7600 2    50   ~ 0
+	5700 7300 6200 7300
+Text Label 6200 7300 2    50   ~ 0
 USART1_CTS
-Text HLabel 5600 7500 0    50   Input ~ 0
+Text HLabel 5700 7200 0    50   Input ~ 0
 USART_RX
 Wire Wire Line
-	5600 7500 6100 7500
-Text Label 6100 7500 2    50   ~ 0
+	5700 7200 6200 7200
+Text Label 6200 7200 2    50   ~ 0
 USART1_RX
-Text HLabel 5600 7700 0    50   Output ~ 0
+Text HLabel 5700 7400 0    50   Output ~ 0
 USART_RTS
 Wire Wire Line
-	5600 7700 6100 7700
-Text Label 6100 7700 2    50   ~ 0
+	5700 7400 6200 7400
+Text Label 6200 7400 2    50   ~ 0
 USART1_RTS
 Wire Wire Line
 	6800 1650 6800 1300
@@ -1568,6 +1549,74 @@ Wire Wire Line
 	3650 5500 4100 5500
 Text Label 4100 5500 2    50   ~ 0
 LCD_ON
+Text HLabel 5700 7600 0    50   Output ~ 0
+USART_RI
+Wire Wire Line
+	5700 7600 6200 7600
+Text Label 6200 7600 2    50   ~ 0
+USART_RI
+Text HLabel 5700 7500 0    50   Input ~ 0
+USART_DSR
+Wire Wire Line
+	5700 7500 6200 7500
+Text Label 6200 7500 2    50   ~ 0
+USART_DSR
+Wire Wire Line
+	5300 4550 5300 4950
+Text Label 5300 4950 1    50   ~ 0
+USART_RI
+Wire Wire Line
+	5400 1650 5400 1250
+Wire Wire Line
+	5500 1650 5500 1250
+Text Label 5500 1250 3    50   ~ 0
+I2C1_SDA
+Text Label 5400 1250 3    50   ~ 0
+I2C1_SCL
+Wire Wire Line
+	5700 6000 6200 6000
+Wire Wire Line
+	5700 6100 6200 6100
+Text Label 6200 6100 2    50   ~ 0
+I2C1_SDA
+Text Label 6200 6000 2    50   ~ 0
+I2C1_SCL
+Text HLabel 5700 6100 0    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 5700 6000 0    50   Output ~ 0
+I2C_SCL
+Wire Wire Line
+	5600 1650 5600 1250
+Wire Wire Line
+	5700 1650 5700 1250
+Text Label 5600 1250 3    50   ~ 0
+~TP_INT
+Text Label 5700 1250 3    50   ~ 0
+~TP_RST
+Wire Wire Line
+	5700 6200 6200 6200
+Wire Wire Line
+	5700 6300 6200 6300
+Text Label 6200 6300 2    50   ~ 0
+~TP_RST
+Text Label 6200 6200 2    50   ~ 0
+~TP_INT
+Text HLabel 5700 6200 0    50   Input ~ 0
+~TP_INT
+Text HLabel 5700 6300 0    50   Output ~ 0
+~TP_RST
+Wire Wire Line
+	5400 4550 5400 4950
+Text Label 5400 4950 1    50   ~ 0
+USART_DCD
+Text HLabel 5700 7700 0    50   Output ~ 0
+USART_DCD
+Wire Wire Line
+	5700 7700 6200 7700
+Text Label 6200 7700 2    50   ~ 0
+USART_DCD
+Text Notes 7000 6950 0    50   ~ 0
+Design Notes\n1. USART1/6 supports 11.25Mbit/s max\n2. All I2C support 100kHz and 400kHz modes\n3. Temperature sensor is ADC1_IN18\n4. STM32F429 : 270mA max @ 3V3 (900mW)
 Wire Bus Line
 	3650 6150 4550 6150
 Wire Bus Line

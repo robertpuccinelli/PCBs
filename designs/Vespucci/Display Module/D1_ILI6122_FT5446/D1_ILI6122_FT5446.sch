@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -13,13 +13,24 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 500  7650 0    50   ~ 0
-Design Notes\n1. LCD clock is PLLSAI\n2. USART1/6 have 11.25Mbit/s\n3. SPI1/4/5/6 have 45Mbit/s\n4. Temperature sensor is ADC1_IN18\n5. JTAG and SWD share the same pins. TMS switches modes\n6.PA13-JTMS//PA14-JTCK//PA15-JTDI//PB3-JTDO//PB4-NJTRST
 $Sheet
-S 6850 2200 850  350 
+S 7150 2200 600  1500
 U 5ECC290F
 F0 "D1_DisplayInterface" 50
 F1 "D1_DisplayInterface.sch" 50
+F2 "LCD_CLK" I L 7150 2600 50 
+F3 "LCD_DE" I L 7150 2700 50 
+F4 "LCD_VSYNC" I L 7150 2800 50 
+F5 "LCD_HSYNC" I L 7150 2900 50 
+F6 "LCD_R[0..7]" I L 7150 2300 50 
+F7 "LCD_G[0..7]" I L 7150 2400 50 
+F8 "LCD_B[0..7]" I L 7150 2500 50 
+F9 "LCD_ON" I L 7150 3100 50 
+F10 "LCD_PWM" I L 7150 3000 50 
+F11 "~TP_RST" I L 7150 3300 50 
+F12 "~TP_INT" O L 7150 3400 50 
+F13 "TP_SDA" B L 7150 3500 50 
+F14 "TP_SCL" I L 7150 3600 50 
 $EndSheet
 $Sheet
 S 3750 2200 850  800 
@@ -49,7 +60,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 2900 4950 2900
 $Sheet
-S 4950 2200 1850 1900
+S 4950 2200 1850 2100
 U 5ECC7549
 F0 "D1_STM32F429" 50
 F1 "D1_STM32F429.sch" 50
@@ -58,26 +69,794 @@ F3 "FMC_nWE" O L 4950 2500 50
 F4 "FMC_nOE" O L 4950 2600 50 
 F5 "FMC_nE1" O L 4950 2700 50 
 F6 "FMC_nWAIT" I L 4950 2800 50 
-F7 "LCD_R[0..7]" B R 6800 2300 50 
-F8 "LCD_G[0..7]" B R 6800 2400 50 
-F9 "LCD_B[0..7]" B R 6800 2500 50 
+F7 "LCD_R[0..7]" O R 6800 2300 50 
+F8 "LCD_G[0..7]" O R 6800 2400 50 
+F9 "LCD_B[0..7]" O R 6800 2500 50 
 F10 "LCD_CLK" O R 6800 2600 50 
 F11 "LCD_DE" O R 6800 2700 50 
 F12 "LCD_VSYNC" O R 6800 2800 50 
 F13 "LCD_HSYNC" O R 6800 2900 50 
-F14 "JTMS" I L 4950 3150 50 
-F15 "nJTRST" I L 4950 3250 50 
-F16 "JTDI" I L 4950 3350 50 
-F17 "JTCK" I L 4950 3450 50 
-F18 "JTDO" O L 4950 3550 50 
+F14 "JTMS" I R 6800 3800 50 
+F15 "~JTRST" I R 6800 4200 50 
+F16 "JTDI" I R 6800 4100 50 
+F17 "JTCK" I R 6800 3900 50 
+F18 "JTDO" O R 6800 4000 50 
 F19 "FMC_RST" O L 4950 2900 50 
-F20 "USART_TX" O R 6800 3400 50 
-F21 "USART_CK" B R 6800 3300 50 
-F22 "USART_CTS" I R 6800 3600 50 
-F23 "USART_RX" I R 6800 3500 50 
-F24 "USART_RTS" O R 6800 3700 50 
-F25 "FMC_A[0..15]" O L 4950 2300 50 
-F26 "LCD_PWM" O R 6800 3000 50 
-F27 "LCD_ON" O R 6800 3100 50 
+F20 "USART_TX" O L 4950 3600 50 
+F21 "USART_CTS" I L 4950 3800 50 
+F22 "USART_RX" I L 4950 3700 50 
+F23 "USART_RTS" O L 4950 3900 50 
+F24 "FMC_A[0..15]" O L 4950 2300 50 
+F25 "LCD_PWM" O R 6800 3000 50 
+F26 "LCD_ON" O R 6800 3100 50 
+F27 "USART_RI" O L 4950 4000 50 
+F28 "USART_DSR" I L 4950 4100 50 
+F29 "I2C_SDA" B R 6800 3500 50 
+F30 "I2C_SCL" O R 6800 3600 50 
+F31 "~TP_INT" I R 6800 3400 50 
+F32 "~TP_RST" O R 6800 3300 50 
+F33 "USART_DCD" O L 4950 4200 50 
 $EndSheet
+Wire Bus Line
+	6800 2300 7150 2300
+Wire Bus Line
+	6800 2400 7150 2400
+Wire Bus Line
+	6800 2500 7150 2500
+Wire Wire Line
+	6800 2600 7150 2600
+Wire Wire Line
+	6800 2700 7150 2700
+Wire Wire Line
+	6800 2800 7150 2800
+Wire Wire Line
+	6800 2900 7150 2900
+Wire Wire Line
+	6800 3000 7150 3000
+Wire Wire Line
+	6800 3100 7150 3100
+Wire Wire Line
+	6800 3300 7150 3300
+Wire Wire Line
+	6800 3400 7150 3400
+Wire Wire Line
+	6800 3500 7150 3500
+Wire Wire Line
+	6800 3600 7150 3600
+Text Label 2950 4300 2    50   ~ 0
+hRX
+Text Label 1250 4100 0    50   ~ 0
+hTX
+Wire Wire Line
+	2950 4300 2400 4300
+Text Label 2950 4400 2    50   ~ 0
+hCTS
+Text Label 1250 4200 0    50   ~ 0
+hRTS
+Wire Wire Line
+	2950 4400 2400 4400
+Wire Wire Line
+	2400 4100 2950 4100
+Text Label 2950 4100 2    50   ~ 0
+hDCD
+Wire Wire Line
+	2400 4000 2950 4000
+Text Label 2950 4000 2    50   ~ 0
+hDTR
+Text Label 1250 3900 0    50   ~ 0
+hRI
+Wire Wire Line
+	2400 3800 2950 3800
+Text Label 2950 3800 2    50   ~ 0
+PWROK
+Wire Wire Line
+	2400 2800 2450 2800
+Text Label 2950 2800 2    50   ~ 0
+PRSNT
+Text Label 1250 3300 0    50   ~ 0
+SMDAT
+Wire Wire Line
+	2400 3200 2950 3200
+Text Label 2950 3200 2    50   ~ 0
+TCK
+Text Label 2950 3300 2    50   ~ 0
+TDI
+Text Label 2950 3400 2    50   ~ 0
+TDO
+Wire Wire Line
+	2400 3500 2950 3500
+Text Label 2950 3500 2    50   ~ 0
+TMS
+Text Label 1250 3600 0    50   ~ 0
+~TRST
+Text Label 1250 3200 0    50   ~ 0
+SMCLK
+Text Label 1250 3800 0    50   ~ 0
+SW_PWR
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F6CA313
+P 2500 2650
+AR Path="/5EE07038/5F6CA313" Ref="#PWR?"  Part="1" 
+AR Path="/5EE97019/5F6CA313" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2500 2500 50  0001 C CNN
+F 1 "+BATT" H 2515 2823 50  0000 C CNN
+F 2 "" H 2500 2650 50  0001 C CNN
+F 3 "" H 2500 2650 50  0001 C CNN
+	1    2500 2650
+	1    0    0    -1  
+$EndComp
+Text Label 1250 4400 0    50   ~ 0
+PRSNT
+Wire Wire Line
+	2150 4600 2150 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CA31B
+P 2150 4750
+AR Path="/5EE07038/5F6CA31B" Ref="#PWR?"  Part="1" 
+AR Path="/5EE97019/5F6CA31B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 4500 50  0001 C CNN
+F 1 "GND" H 2155 4577 50  0000 C CNN
+F 2 "" H 2150 4750 50  0001 C CNN
+F 3 "" H 2150 4750 50  0001 C CNN
+	1    2150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3600 1250 3600
+Wire Wire Line
+	1900 4200 1250 4200
+Wire Wire Line
+	1900 4100 1250 4100
+Wire Wire Line
+	1250 3900 1900 3900
+Wire Wire Line
+	1900 3800 1250 3800
+$Comp
+L Connector_Generic:Conn_02x18_Row_Letter_First J?
+U 1 1 5F6CA326
+P 2200 3600
+AR Path="/5EE07038/5F6CA326" Ref="J?"  Part="1" 
+AR Path="/5EE97019/5F6CA326" Ref="J?"  Part="1" 
+F 0 "J?" H 2700 2650 50  0000 C CNN
+F 1 "PCIExpress" H 2600 2550 50  0000 C CNN
+F 2 "Connector_PCBEdge:BUS_PCIexpress_x1" H 2200 3600 50  0001 C CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/10018784.pdf" H 2200 3600 50  0001 C CNN
+	1    2200 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3100 2450 3100
+Wire Wire Line
+	2450 3100 2450 3900
+Wire Wire Line
+	2450 4600 2150 4600
+Wire Wire Line
+	1850 4600 1850 4500
+Wire Wire Line
+	1850 3100 1900 3100
+Wire Wire Line
+	1900 3400 1850 3400
+Connection ~ 1850 3400
+Wire Wire Line
+	1850 3400 1850 3100
+Wire Wire Line
+	2400 3900 2450 3900
+Connection ~ 2450 3900
+Wire Wire Line
+	2450 3900 2450 4200
+Wire Wire Line
+	1900 4000 1850 4000
+Connection ~ 1850 4000
+Wire Wire Line
+	1850 4000 1850 3400
+Wire Wire Line
+	2400 4200 2450 4200
+Connection ~ 2450 4200
+Wire Wire Line
+	2450 4200 2450 4500
+Wire Wire Line
+	2400 4500 2450 4500
+Connection ~ 2450 4500
+Wire Wire Line
+	2450 4500 2450 4600
+Wire Wire Line
+	1900 4500 1850 4500
+Connection ~ 1850 4500
+Wire Wire Line
+	1850 4500 1850 4400
+Wire Wire Line
+	1900 4300 1850 4300
+Connection ~ 1850 4300
+Wire Wire Line
+	1850 4300 1850 4000
+Wire Wire Line
+	1900 4400 1850 4400
+Connection ~ 1850 4400
+Wire Wire Line
+	1850 4400 1850 4300
+Wire Wire Line
+	1850 4400 1250 4400
+Wire Wire Line
+	2450 3100 2450 2800
+Connection ~ 2450 3100
+Connection ~ 2450 2800
+Wire Wire Line
+	2400 2900 2500 2900
+Wire Wire Line
+	2500 2900 2500 2700
+Wire Wire Line
+	2400 3000 2500 3000
+Wire Wire Line
+	2500 3000 2500 2900
+Connection ~ 2500 2900
+Wire Wire Line
+	1900 2800 1800 2800
+Connection ~ 1800 2800
+Wire Wire Line
+	1800 2800 1800 2650
+Wire Wire Line
+	1900 2900 1800 2900
+Wire Wire Line
+	1800 2900 1800 2800
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F6CA357
+P 1800 2650
+AR Path="/5EE07038/5F6CA357" Ref="#PWR?"  Part="1" 
+AR Path="/5EE97019/5F6CA357" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1800 2500 50  0001 C CNN
+F 1 "+BATT" H 1815 2823 50  0000 C CNN
+F 2 "" H 1800 2650 50  0001 C CNN
+F 3 "" H 1800 2650 50  0001 C CNN
+	1    1800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3700 2650 3700
+Wire Wire Line
+	2650 3700 2650 3600
+Wire Wire Line
+	2400 3600 2650 3600
+Connection ~ 2650 3600
+Wire Wire Line
+	2450 2800 2950 2800
+Wire Wire Line
+	2650 3600 2650 2750
+$Comp
+L power:VBUS #PWR?
+U 1 1 5F6CA363
+P 2650 2750
+AR Path="/5EE07038/5F6CA363" Ref="#PWR?"  Part="1" 
+AR Path="/5EE97019/5F6CA363" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 2600 50  0001 C CNN
+F 1 "VBUS" H 2665 2923 50  0000 C CNN
+F 2 "" H 2650 2750 50  0001 C CNN
+F 3 "" H 2650 2750 50  0001 C CNN
+	1    2650 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3500 1650 3500
+Wire Wire Line
+	1900 3700 1650 3700
+Wire Wire Line
+	1650 3700 1650 3500
+Connection ~ 1650 3500
+$Comp
+L power:VBUS #PWR?
+U 1 1 5F6CA36E
+P 1650 2750
+AR Path="/5EE07038/5F6CA36E" Ref="#PWR?"  Part="1" 
+AR Path="/5EE97019/5F6CA36E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1650 2600 50  0001 C CNN
+F 1 "VBUS" H 1665 2923 50  0000 C CNN
+F 2 "" H 1650 2750 50  0001 C CNN
+F 3 "" H 1650 2750 50  0001 C CNN
+	1    1650 2750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2150 4600
+Wire Wire Line
+	2150 4600 1850 4600
+Wire Wire Line
+	1900 3000 1250 3000
+Text Label 1250 3000 0    50   ~ 0
+SYSID
+Text Notes 1900 900  0    98   ~ 20
+Interfaces
+Text Notes 2050 2250 0    79   ~ 16
+PCIe
+Wire Wire Line
+	1900 3200 1250 3200
+Wire Wire Line
+	1900 3300 1250 3300
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F6CA393
+P 1650 2800
+AR Path="/5EE07038/5F6CA393" Ref="#FLG?"  Part="1" 
+AR Path="/5EE97019/5F6CA393" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 1650 2875 50  0001 C CNN
+F 1 "PWR_FLAG" V 1650 2930 50  0000 L CNN
+F 2 "" H 1650 2800 50  0001 C CNN
+F 3 "~" H 1650 2800 50  0001 C CNN
+	1    1650 2800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1650 2800
+Wire Wire Line
+	1650 2800 1650 2750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F6CA39B
+P 2150 4700
+AR Path="/5EE07038/5F6CA39B" Ref="#FLG?"  Part="1" 
+AR Path="/5EE97019/5F6CA39B" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 2150 4775 50  0001 C CNN
+F 1 "PWR_FLAG" V 2150 4831 50  0000 L CNN
+F 2 "" H 2150 4700 50  0001 C CNN
+F 3 "~" H 2150 4700 50  0001 C CNN
+	1    2150 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 2150 4700
+Wire Wire Line
+	2150 4700 2150 4750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F6CA3A3
+P 2500 2700
+AR Path="/5EE07038/5F6CA3A3" Ref="#FLG?"  Part="1" 
+AR Path="/5EE97019/5F6CA3A3" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 2500 2775 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 2830 50  0000 L CNN
+F 2 "" H 2500 2700 50  0001 C CNN
+F 3 "~" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2500 2700
+Wire Wire Line
+	2500 2700 2500 2650
+NoConn ~ 1900 3200
+NoConn ~ 1900 3300
+Text Notes 7050 6800 0    50   ~ 0
+Design Notes:\n1. Total max current consumption - 3V3: 386mA; 12V: 150mA\n2. Total max power consumption - 3000mW
+$Comp
+L Device:LED D?
+U 1 1 5F6CA2DF
+P 2100 7000
+AR Path="/5EE07038/5F6CA2DF" Ref="D?"  Part="1" 
+AR Path="/5EE97019/5F6CA2DF" Ref="D?"  Part="1" 
+F 0 "D?" H 2100 6900 50  0000 C CNN
+F 1 "LED" H 2050 7100 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2100 7000 50  0001 C CNN
+F 3 "~" H 2100 7000 50  0001 C CNN
+	1    2100 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6CA2D9
+P 1700 7000
+AR Path="/5EE07038/5F6CA2D9" Ref="R?"  Part="1" 
+AR Path="/5EE97019/5F6CA2D9" Ref="R?"  Part="1" 
+F 0 "R?" V 1800 7000 50  0000 C CNN
+F 1 "470R" V 1700 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1630 7000 50  0001 C CNN
+F 3 "~" H 1700 7000 50  0001 C CNN
+	1    1700 7000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2400 3300 2950 3300
+Wire Wire Line
+	2400 3400 2950 3400
+Text Notes 1450 2400 0    50   ~ 10
+VBatt : 12V
+Text Notes 2500 2400 0    50   ~ 10
+VBus : 3V3
+Wire Wire Line
+	4950 3600 4100 3600
+Text Label 3900 3600 0    50   ~ 0
+hRX
+Wire Wire Line
+	4950 3700 4450 3700
+Text Label 4150 3700 0    50   ~ 0
+hTX
+Wire Wire Line
+	4950 3800 4550 3800
+Text Label 4550 3800 0    50   ~ 0
+hRTS
+Wire Wire Line
+	4950 3900 4550 3900
+Text Label 4550 3900 0    50   ~ 0
+hCTS
+Wire Wire Line
+	4950 4000 4550 4000
+Text Label 4550 4000 0    50   ~ 0
+hRI
+Wire Wire Line
+	4950 4100 4550 4100
+Text Label 4550 4100 0    50   ~ 0
+hDTR
+Wire Wire Line
+	4950 4200 4550 4200
+Text Label 4550 4200 0    50   ~ 0
+hDCD
+Wire Wire Line
+	1650 2800 1650 3500
+Wire Wire Line
+	6800 3800 7100 3800
+Text Label 7100 3800 2    50   ~ 0
+TMS
+Wire Wire Line
+	6800 3900 7100 3900
+Text Label 7100 3900 2    50   ~ 0
+TCK
+Wire Wire Line
+	6800 4000 7100 4000
+Text Label 7100 4000 2    50   ~ 0
+TDO
+Wire Wire Line
+	6800 4100 7100 4100
+Text Label 7100 4100 2    50   ~ 0
+TDI
+Wire Wire Line
+	6800 4200 7100 4200
+Text Label 7100 4200 2    50   ~ 0
+~TRST
+Text Label 6850 6650 2    50   ~ 0
+SYSID
+Wire Wire Line
+	6850 6650 6600 6650
+$Comp
+L power:VBUS #PWR?
+U 1 1 5F8EC6AC
+P 6200 6600
+F 0 "#PWR?" H 6200 6450 50  0001 C CNN
+F 1 "VBUS" H 6215 6773 50  0000 C CNN
+F 2 "" H 6200 6600 50  0001 C CNN
+F 3 "" H 6200 6600 50  0001 C CNN
+	1    6200 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8ECCF6
+P 6450 6600
+F 0 "R?" V 6350 6600 50  0000 L CNN
+F 1 "1K2" V 6450 6550 50  0000 L CNN
+F 2 "" V 6380 6600 50  0001 C CNN
+F 3 "~" H 6450 6600 50  0001 C CNN
+	1    6450 6600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8ED1EF
+P 6450 6700
+F 0 "R?" V 6550 6700 50  0000 L CNN
+F 1 "8K41" V 6450 6600 50  0000 L CNN
+F 2 "" V 6380 6700 50  0001 C CNN
+F 3 "~" H 6450 6700 50  0001 C CNN
+	1    6450 6700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6600 6600 6600 6650
+Wire Wire Line
+	6300 6600 6200 6600
+Wire Wire Line
+	6300 6700 6200 6700
+Connection ~ 6600 6650
+Wire Wire Line
+	6600 6650 6600 6700
+$Comp
+L power:GND #PWR?
+U 1 1 5F92C19A
+P 6200 6700
+F 0 "#PWR?" H 6200 6450 50  0001 C CNN
+F 1 "GND" H 6205 6527 50  0000 C CNN
+F 2 "" H 6200 6700 50  0001 C CNN
+F 3 "" H 6200 6700 50  0001 C CNN
+	1    6200 6700
+	1    0    0    -1  
+$EndComp
+Text Notes 6250 6350 0    50   ~ 10
+SYSID : 0.875
+Text Label 3800 3850 0    50   ~ 0
+LED_RX
+Text Label 4150 3850 0    50   ~ 0
+LED_TX
+Wire Wire Line
+	4100 3600 4100 3850
+Wire Wire Line
+	4100 3850 3800 3850
+Connection ~ 4100 3600
+Wire Wire Line
+	4100 3600 3900 3600
+Wire Wire Line
+	4450 3700 4450 3850
+Wire Wire Line
+	4450 3850 4150 3850
+Connection ~ 4450 3700
+Wire Wire Line
+	4450 3700 4150 3700
+$Comp
+L custom-components:NC7WZ14 U?
+U 1 1 5F97B409
+P 1200 7000
+F 0 "U?" H 1250 7250 50  0000 L CNN
+F 1 "NC7WZ14" H 1150 7150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1200 6450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NC7WZ14P6X_C50793.pdf" H 900 7000 50  0001 C CNN
+	1    1200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom-components:NC7WZ14 U?
+U 2 1 5F97C3E5
+P 1200 7350
+F 0 "U?" H 1300 7100 50  0000 L CNN
+F 1 "NC7WZ14" H 1200 7200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1200 6800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NC7WZ14P6X_C50793.pdf" H 900 7350 50  0001 C CNN
+	2    1200 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6900 1150 6800
+$Comp
+L power:VBUS #PWR?
+U 1 1 5F9959F0
+P 1150 6300
+F 0 "#PWR?" H 1150 6150 50  0001 C CNN
+F 1 "VBUS" H 1165 6473 50  0000 C CNN
+F 2 "" H 1150 6300 50  0001 C CNN
+F 3 "" H 1150 6300 50  0001 C CNN
+	1    1150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  7000 600  7000
+Text Label 600  7000 0    50   ~ 0
+LED_RX
+Wire Wire Line
+	950  7350 600  7350
+Text Label 600  7350 0    50   ~ 0
+LED_TX
+Wire Wire Line
+	1550 7000 1450 7000
+Wire Wire Line
+	1850 7000 1950 7000
+$Comp
+L Device:LED D?
+U 1 1 5F9F26B3
+P 2100 7350
+AR Path="/5EE07038/5F9F26B3" Ref="D?"  Part="1" 
+AR Path="/5EE97019/5F9F26B3" Ref="D?"  Part="1" 
+F 0 "D?" H 2100 7250 50  0000 C CNN
+F 1 "LED" H 2050 7450 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2100 7350 50  0001 C CNN
+F 3 "~" H 2100 7350 50  0001 C CNN
+	1    2100 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F9F26B9
+P 1700 7350
+AR Path="/5EE07038/5F9F26B9" Ref="R?"  Part="1" 
+AR Path="/5EE97019/5F9F26B9" Ref="R?"  Part="1" 
+F 0 "R?" V 1800 7350 50  0000 C CNN
+F 1 "470R" V 1700 7350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1630 7350 50  0001 C CNN
+F 3 "~" H 1700 7350 50  0001 C CNN
+	1    1700 7350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1550 7350 1450 7350
+Wire Wire Line
+	1850 7350 1950 7350
+Wire Wire Line
+	2250 7350 2350 7350
+Wire Wire Line
+	2250 7000 2350 7000
+Wire Wire Line
+	2350 7000 2350 7350
+Connection ~ 2350 7350
+Wire Wire Line
+	2350 7350 2350 7450
+$Comp
+L power:GND #PWR?
+U 1 1 5FA0A9E1
+P 2350 7450
+F 0 "#PWR?" H 2350 7200 50  0001 C CNN
+F 1 "GND" H 2355 7277 50  0000 C CNN
+F 2 "" H 2350 7450 50  0001 C CNN
+F 3 "" H 2350 7450 50  0001 C CNN
+	1    2350 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6400 1150 6300
+Text Label 1950 6500 2    50   ~ 0
+hDCD
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5FA8233E
+P 1250 6600
+AR Path="/5F385065/5FA8233E" Ref="Q?"  Part="1" 
+AR Path="/5EE97019/5FA8233E" Ref="Q?"  Part="1" 
+F 0 "Q?" H 1100 6900 50  0000 L CNN
+F 1 "BSS138W" H 850 6800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 1450 6700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 1250 6600 50  0001 C CNN
+	1    1250 6600
+	-1   0    0    -1  
+$EndComp
+Text Label 2550 7000 0    50   ~ 0
+PWROK
+$Comp
+L Device:R R?
+U 1 1 5FF471EF
+P 2850 7250
+AR Path="/5EE07038/5FF471EF" Ref="R?"  Part="1" 
+AR Path="/5EE97019/5FF471EF" Ref="R?"  Part="1" 
+F 0 "R?" H 2920 7296 50  0000 L CNN
+F 1 "51K" V 2850 7200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2780 7250 50  0001 C CNN
+F 3 "~" H 2850 7250 50  0001 C CNN
+	1    2850 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7000 2550 7000
+Wire Wire Line
+	2850 7000 2850 7100
+$Comp
+L Device:LED D?
+U 1 1 5FF471FE
+P 3300 6600
+AR Path="/5EE07038/5FF471FE" Ref="D?"  Part="1" 
+AR Path="/5EE97019/5FF471FE" Ref="D?"  Part="1" 
+F 0 "D?" H 3050 6550 50  0000 C CNN
+F 1 "LED" H 3150 6450 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3300 6600 50  0001 C CNN
+F 3 "~" H 3300 6600 50  0001 C CNN
+	1    3300 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF47204
+P 3300 6750
+AR Path="/5EE07038/5FF47204" Ref="R?"  Part="1" 
+AR Path="/5EE97019/5FF47204" Ref="R?"  Part="1" 
+F 0 "R?" V 3200 6750 50  0000 C CNN
+F 1 "470R" V 3300 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 6750 50  0001 C CNN
+F 3 "~" H 3300 6750 50  0001 C CNN
+	1    3300 6750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 6800 3150 6750
+Wire Wire Line
+	3450 6750 3450 6600
+Wire Wire Line
+	2850 7400 3000 7400
+Wire Wire Line
+	3150 7400 3150 7200
+Wire Wire Line
+	3000 7400 3000 7450
+Connection ~ 3000 7400
+Wire Wire Line
+	3000 7400 3150 7400
+$Comp
+L power:GND #PWR?
+U 1 1 5FF47211
+P 3000 7450
+AR Path="/5EE07038/5FF47211" Ref="#PWR?"  Part="1" 
+AR Path="/5EE97019/5FF47211" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 7200 50  0001 C CNN
+F 1 "GND" H 3005 7277 50  0000 C CNN
+F 2 "" H 3000 7450 50  0001 C CNN
+F 3 "" H 3000 7450 50  0001 C CNN
+	1    3000 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6600 3150 6450
+Wire Wire Line
+	3150 6450 2850 6450
+Text Label 2850 6450 0    50   ~ 0
+VDD_EXT
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5FF5B1FF
+P 3050 7000
+AR Path="/5F385065/5FF5B1FF" Ref="Q?"  Part="1" 
+AR Path="/5EE97019/5FF5B1FF" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2850 7250 50  0000 L CNN
+F 1 "BSS138W" H 2600 7150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3250 7100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 3050 7000 50  0001 C CNN
+	1    3050 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 7000
+$Comp
+L Device:R R?
+U 1 1 5FF87FF2
+P 2100 6600
+F 0 "R?" V 2000 6600 50  0000 C CNN
+F 1 "51K" V 2100 6600 50  0000 C CNN
+F 2 "" V 2030 6600 50  0001 C CNN
+F 3 "~" H 2100 6600 50  0001 C CNN
+	1    2100 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 6600 2350 6600
+Wire Wire Line
+	2350 6600 2350 7000
+Connection ~ 2350 7000
+Wire Wire Line
+	1450 6600 1750 6600
+Wire Wire Line
+	1750 6600 1750 6500
+Wire Wire Line
+	1750 6500 1950 6500
+Connection ~ 1750 6600
+Wire Wire Line
+	1750 6600 1950 6600
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5FFBAED2
+P 6350 7350
+F 0 "H?" H 6450 7399 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6200 7000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad" H 6350 7350 50  0001 C CNN
+F 3 "~" H 6350 7350 50  0001 C CNN
+	1    6350 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5FFBAED8
+P 6650 7350
+F 0 "H?" H 6750 7399 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6900 7000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad" H 6650 7350 50  0001 C CNN
+F 3 "~" H 6650 7350 50  0001 C CNN
+	1    6650 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 7450 6350 7500
+Wire Wire Line
+	6350 7500 6500 7500
+Wire Wire Line
+	6650 7500 6650 7450
+Wire Wire Line
+	6500 7500 6500 7550
+Connection ~ 6500 7500
+Wire Wire Line
+	6500 7500 6650 7500
+$Comp
+L power:GND #PWR?
+U 1 1 5FFBAEE4
+P 6500 7550
+F 0 "#PWR?" H 6500 7300 50  0001 C CNN
+F 1 "GND" H 6505 7377 50  0000 C CNN
+F 2 "" H 6500 7550 50  0001 C CNN
+F 3 "" H 6500 7550 50  0001 C CNN
+	1    6500 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

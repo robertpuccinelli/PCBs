@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 7 7
 Title "P1 - Module Programmer/Debugger"
-Date "2020-05-16"
-Rev "A"
+Date "2020-05-23"
+Rev "B"
 Comp "Puccinelli Laboratories, Inc."
 Comment1 ""
 Comment2 ""
@@ -537,7 +537,7 @@ L Device:LED D1
 U 1 1 600DDE42
 P 1300 6200
 F 0 "D1" V 1400 6200 50  0000 R CNN
-F 1 "TX" H 1350 6300 50  0000 R CNN
+F 1 "LED" H 1350 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 1300 6200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 1300 6200 50  0001 C CNN
 	1    1300 6200
@@ -561,7 +561,7 @@ L Device:LED D3
 U 1 1 600E6246
 P 1800 6200
 F 0 "D3" V 1900 6200 50  0000 R CNN
-F 1 "RX" H 1850 6300 50  0000 R CNN
+F 1 "LED" H 1850 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 1800 6200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 1800 6200 50  0001 C CNN
 	1    1800 6200
@@ -615,7 +615,7 @@ L Device:LED D2
 U 1 1 6014208B
 P 1550 6200
 F 0 "D2" V 1650 6200 50  0000 R CNN
-F 1 "FTDI_3V3" H 1700 6300 50  0000 R CNN
+F 1 "LED" H 1600 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 1550 6200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 1550 6200 50  0001 C CNN
 	1    1550 6200
@@ -771,7 +771,7 @@ L Device:LED D5
 U 1 1 6021527A
 P 3450 6200
 F 0 "D5" V 3550 6200 50  0000 R CNN
-F 1 "TARGET_VIN" H 3650 6300 50  0000 R CNN
+F 1 "LED" H 3500 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 3450 6200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 3450 6200 50  0001 C CNN
 	1    3450 6200
@@ -821,7 +821,7 @@ L Device:LED D4
 U 1 1 601E6BFC
 P 3100 6200
 F 0 "D4" V 3200 6200 50  0000 R CNN
-F 1 "TARGET_3V3" H 3300 6300 50  0000 R CNN
+F 1 "LED" H 3150 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 3100 6200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 3100 6200 50  0001 C CNN
 	1    3100 6200
@@ -1043,7 +1043,7 @@ L Device:LED D7
 U 1 1 60478CD2
 P 5350 6950
 F 0 "D7" V 5450 6950 50  0000 R CNN
-F 1 "TARGET_PRESENT" H 5650 7050 50  0000 R CNN
+F 1 "LED" H 5400 7050 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5350 6950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 5350 6950 50  0001 C CNN
 	1    5350 6950
@@ -1095,12 +1095,12 @@ $Comp
 L Device:Q_NMOS_GSD Q2
 U 1 1 60502362
 P 4500 6650
-F 0 "Q2" H 4300 6450 50  0000 L CNN
-F 1 "BSS138W" H 3950 6550 50  0000 L CNN
+F 0 "Q2" H 4250 6850 50  0000 L CNN
+F 1 "BSS138W" H 4000 6750 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4700 6750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 4500 6650 50  0001 C CNN
 	1    4500 6650
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4400 5650 4400 5550
@@ -1133,7 +1133,7 @@ L Device:LED D6
 U 1 1 6050237C
 P 4400 6200
 F 0 "D6" V 4500 6200 50  0000 R CNN
-F 1 "TARGET_POWEROK" H 4750 6300 50  0000 R CNN
+F 1 "LED" H 4450 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 4400 6200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Lite-On-LTST-C193KGKT-5A_C125102.pdf" H 4400 6200 50  0001 C CNN
 	1    4400 6200
@@ -1281,8 +1281,8 @@ F 3 "" H 6050 5550 50  0001 C CNN
 	1    6050 5550
 	1    0    0    -1  
 $EndComp
-Text Notes 7000 6900 0    50   ~ 0
-1. VBUS is 3V3 from a 300mA LDO.\n2. FTDI 3V3 OUT supports up to 50mA output. Each 3V3 LED is 5mA.\n3. 10 pin compact JTAG header follows Black Magic Probe pinning. SWD pin header is for other devices.\n4. If target needs VBUS, power with USB and enable via JTAG/SWD/FTDI.
+Text Notes 7000 7050 0    50   ~ 0
+1. VBUS is 3V3 from a 300mA LDO.\n2. FTDI 3V3 OUT supports up to 50mA output. Each 3V3 LED is 5mA.\n3. 10 pin compact JTAG header follows Black Magic Probe pinning. SWD pin header is for other devices.\n4. If target needs VBUS, power with USB and enable via JTAG/SWD/FTDI.\n5. Rev A had LED NMOS S and D flipped\n6. UMAX PCIe connector had some holes 0.3mm offset
 Wire Wire Line
 	3750 2900 4050 2900
 Text Label 4050 2900 2    50   ~ 0
@@ -1387,11 +1387,11 @@ $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 5EC8940C
 P 3550 6650
-F 0 "Q1" H 3350 6450 50  0000 L CNN
-F 1 "BSS138W" H 3050 6550 50  0000 L CNN
+F 0 "Q1" H 3400 6850 50  0000 L CNN
+F 1 "BSS138W" H 3150 6750 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3750 6750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf" H 3550 6650 50  0001 C CNN
 	1    3550 6650
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

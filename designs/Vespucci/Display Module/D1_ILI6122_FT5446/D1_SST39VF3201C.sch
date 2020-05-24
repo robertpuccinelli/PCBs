@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -345,7 +345,7 @@ L Device:C C?
 U 1 1 5ECB6F56
 P 5950 2100
 F 0 "C?" V 5698 2100 50  0000 C CNN
-F 1 "100nF" V 5789 2100 50  0000 C CNN
+F 1 "1uF" V 5789 2100 50  0000 C CNN
 F 2 "" H 5988 1950 50  0001 C CNN
 F 3 "~" H 5950 2100 50  0001 C CNN
 	1    5950 2100
@@ -383,6 +383,8 @@ Text HLabel 6400 4700 2    50   Input ~ 0
 NOR_nWE
 Text HLabel 6850 4800 2    50   Output ~ 0
 NOR_nWAIT
+Text Notes 7000 6700 0    50   ~ 0
+Design Notes:\n1. NOR Flash : 45mA max @ 3V3 (150mW)
 Wire Bus Line
 	6600 2300 6600 3900
 Wire Bus Line
