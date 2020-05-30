@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
-Title "P1 - Module Programmer/Debugger"
+Sheet 1 1
+Title "P1 - FT231X Module Programmer/Debugger"
 Date "2020-05-23"
 Rev "B"
 Comp "Puccinelli Laboratories, Inc."

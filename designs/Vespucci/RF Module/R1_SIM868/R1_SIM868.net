@@ -1,11 +1,11 @@
 (export (version D)
   (design
     (source "/Users/robby/Git/PCBs/designs/Vespucci/RF Module/R1_SIM868/R1_SIM868.sch")
-    (date "Sunday, May 24, 2020 at 08:41:36 AM")
+    (date "Tuesday, May 26, 2020 at 09:09:57 PM")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
-        (title "R1 - Radio Module")
+        (title "R1 - SIM868 GMS/GNSS Radio Module")
         (company "Puccinelli Laboratories, Inc")
         (rev B)
         (date 2020-05-18)

@@ -1,11 +1,11 @@
 (export (version D)
   (design
     (source "/Users/robby/Git/PCBs/designs/Vespucci/Module Programmer/P1_FT231X/P1_FT231X.sch")
-    (date "Saturday, May 23, 2020 at 10:17:21 PM")
+    (date "Tuesday, May 26, 2020 at 09:51:09 PM")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
-        (title "P1 - Module Programmer/Debugger")
+        (title "P1 - FT231X Module Programmer/Debugger")
         (company "Puccinelli Laboratories, Inc.")
         (rev B)
         (date 2020-05-23)
@@ -294,7 +294,13 @@
       (datasheet https://datasheet.lcsc.com/szlcsc/Diodes-Incorporated-BSS138W-7-F_C24553.pdf)
       (libsource (lib Device) (part Q_NMOS_GSD) (description "N-MOSFET transistor, gate/source/drain"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 5EC8940C)))
+      (tstamp 5EC8940C))
+    (comp (ref G1)
+      (value OSHW_logo)
+      (footprint Custom_Footprints:OSHW_logo)
+      (libsource (lib custom-components) (part OSHW_logo) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5ECB2542)))
   (libparts
     (libpart (lib 74xGxx) (part 74LVC1G00)
       (aliases
@@ -560,7 +566,12 @@
         (field (name Value) SW_Push))
       (pins
         (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive)))))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib custom-components) (part OSHW_logo)
+      (fields
+        (field (name Reference) "#G")
+        (field (name Value) OSHW_logo)
+        (field (name Footprint) Custom_Footprints:OSHW_logo))))
   (libraries
     (library (logical 74xGxx)
       (uri "/Library/Application Support/kicad/library/74xGxx.lib"))
@@ -575,7 +586,9 @@
     (library (logical Regulator_Linear)
       (uri "/Library/Application Support/kicad/library/Regulator_Linear.lib"))
     (library (logical Switch)
-      (uri "/Library/Application Support/kicad/library/Switch.lib")))
+      (uri "/Library/Application Support/kicad/library/Switch.lib"))
+    (library (logical custom-components)
+      (uri /Users/robby/Git/PCBs/libraries/custom-kicad/custom-components.lib)))
   (nets
     (net (code 1) (name /PRSNT1)
       (node (ref J3) (pin a1))

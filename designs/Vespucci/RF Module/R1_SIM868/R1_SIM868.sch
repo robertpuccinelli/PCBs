@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "R1 - Radio Module"
+Title "R1 - SIM868 GMS/GNSS Radio Module"
 Date "2020-05-18"
 Rev "B"
 Comp "Puccinelli Laboratories, Inc"
@@ -1050,7 +1050,7 @@ $Comp
 L Device:C C15
 U 1 1 5E9880C3
 P 10350 4350
-F 0 "C15" V 10400 4200 50  0000 L CNN
+F 0 "C15" V 10400 4150 50  0000 L CNN
 F 1 "100nF" V 10200 4300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 10388 4200 50  0001 C CNN
 F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=TMK105BJ104KV-F%20%20&u=M" H 10350 4350 50  0001 C CNN
@@ -1408,7 +1408,7 @@ Connection ~ 9450 1900
 Wire Wire Line
 	9450 1900 9450 1650
 Text Notes 9200 7100 0    50   ~ 0
-6. VDD requires at least 2A input\n7. VDD traces should be 80mil or more\n8. Default baud is 115k\n9. Place power as close to IC as possible\n10. Keep SIM as far away from gps ant as possible\n11. SIM traces should be far from VBAT
+6. VDD requires at least 2A input\n7. VDD traces should be 80mil or more\n8. Default baud is 115k\n9. Place power as close to IC as possible\n10. Keep SIM as far away from gps ant as possible\n11. REV A only supported 5V VBatt, not 12V
 Connection ~ 4550 2900
 Wire Notes Line
 	8700 6500 8700 500 
@@ -1571,8 +1571,8 @@ Text Notes 2600 6200 0    98   ~ 20
 LEDs
 Wire Notes Line
 	5200 6550 6950 6550
-Text Notes 5900 6750 0    98   ~ 20
-Misc.
+Text Notes 5650 6750 0    98   ~ 20
+Mechanical
 Wire Wire Line
 	9700 2050 9050 2050
 Wire Wire Line

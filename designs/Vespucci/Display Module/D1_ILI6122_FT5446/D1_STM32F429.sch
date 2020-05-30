@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
-Title ""
+Sheet 3 4
+Title "D1 STM32F429"
 Date ""
 Rev ""
-Comp ""
+Comp "Puccinelli Laboratories, Inc"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1607,8 +1607,8 @@ Wire Wire Line
 	5700 7700 6200 7700
 Text Label 6200 7700 2    50   ~ 0
 USART_DCD
-Text Notes 7000 7050 0    50   ~ 0
-Design Notes\n1. USART1/6 supports 11.25Mbit/s max\n2. All I2C support 100kHz and 400kHz modes\n3. Temperature sensor is ADC1_IN18\n4. STM32F429 : 270mA max @ 3V3 (900mW)\n5. LCD_B0 requires FMC_A20 pin. Double Flash more valuable than blue LSB
+Text Notes 7000 6950 0    50   ~ 0
+1. USART1/6 supports 11.25Mbit/s max\n2. All I2C support 100kHz and 400kHz modes\n3. Temperature sensor is ADC1_IN18\n4. STM32F429 : 270mA max @ 3V3 (900mW)\n5. LCD_B0 requires FMC_A20 pin. Double Flash more valuable than blue LSB
 $Comp
 L custom-components:OSHW_logo #G3
 U 1 1 5F27390F
