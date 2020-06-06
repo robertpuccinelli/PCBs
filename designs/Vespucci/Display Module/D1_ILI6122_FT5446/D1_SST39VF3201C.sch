@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 6 4
 Title "D1 NOR Flash"
 Date ""
 Rev ""
@@ -20,6 +20,7 @@ P 5700 3650
 AR Path="/5ECB6EA6" Ref="U?"  Part="1" 
 AR Path="/5ECA9B33/5ECB6EA6" Ref="U4"  Part="1" 
 AR Path="/5ECC7549/5ECB6EA6" Ref="U4"  Part="1" 
+AR Path="/5EE97019/5ECA9B33/5ECB6EA6" Ref="U4"  Part="1" 
 F 0 "U4" H 4900 2550 50  0000 C CNN
 F 1 "SST39VF3201C-70-4I-B3KE" H 5000 2400 50  0000 C CNN
 F 2 "Custom_Footprints:TFBGA-48_6x8_6.0x8.0mm" H 5700 3950 50  0001 C CNN

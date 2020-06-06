@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -30,5 +30,11 @@ S 2300 4500 950  600
 U 5F385065
 F0 "Programmer" 50
 F1 "Module Programmer/P1_FT231X/P1_FT231X.sch" 50
+$EndSheet
+$Sheet
+S 6350 2900 1000 750 
+U 5EF9D71D
+F0 "Main Board" 50
+F1 "Main Board/M1_STM32F0/M1_STM32F0.sch" 50
 $EndSheet
 $EndSCHEMATC

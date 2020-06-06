@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 5 4
 Title "D1 STM32F429"
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ P 5500 3150
 AR Path="/5ECDEA39" Ref="U?"  Part="1" 
 AR Path="/5ECC7549/5ECDEA39" Ref="U5"  Part="1" 
 AR Path="/5EE97019/5ECC7549/5ECDEA39" Ref="U?"  Part="1" 
-F 0 "U5" V 4100 5850 50  0000 R CNN
+F 0 "U?" V 4100 5850 50  0000 R CNN
 F 1 "STM32F429IGTx" V 5500 3450 50  0000 R CNN
 F 2 "Package_QFP:LQFP-176_24x24mm_P0.5mm" H 4200 -1150 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf" H 5500 3150 50  0001 C CNN
