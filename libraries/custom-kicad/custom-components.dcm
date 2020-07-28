@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADS131M08IPBS
+F https://www.ti.com/lit/ds/symlink/ads131m08.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1595365341008
+$ENDCMP
+#
 $CMP AME5268
 D 3A, 28V, 340KHz SynchronousRectified Step-Down Converter
 K AME DC/DC Converter

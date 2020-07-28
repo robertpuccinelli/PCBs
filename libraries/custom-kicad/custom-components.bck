@@ -6,6 +6,10 @@ K AME DC/DC Converter
 F http://www.ame.com.tw/datasheet/AME5268.pdf
 $ENDCMP
 #
+$CMP AP6320x
+F https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf
+$ENDCMP
+#
 $CMP ESDA6V1W5
 D 6.1V Transnil clamping diode
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/cd/9b/8d/39/1f/d4/43/ba/CD00064033.pdf/files/CD00064033.pdf/jcr:content/translations/en.CD00064033.pdf
