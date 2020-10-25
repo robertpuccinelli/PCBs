@@ -1,4 +1,4 @@
-#include <stdint.h>
+#include <stdint-gcc.h>
 
 uint16_t dataRead(void);
 int dataClk(void);

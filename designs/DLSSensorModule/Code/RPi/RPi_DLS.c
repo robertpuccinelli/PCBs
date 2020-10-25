@@ -10,7 +10,7 @@
 #ifndef RPI_H
 #define RPI_H
 
-#include <stdint.h>
+#include <stdint-gcc.h>
 
 /* GENERAL DEFS */
 #define PBASE 0x3F000000

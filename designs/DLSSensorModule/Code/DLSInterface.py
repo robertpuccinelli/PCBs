@@ -44,7 +44,7 @@ def processData(data):
     cutoff_val = (max(cumulative_autocorr)-min(cumulative_autocorr)) * 0.1 + min(cumulative_autocorr)
     cutoff_idx = np.where((cumulative_autocorr > cutoff_val) == False)[0][0]
     tau = 1e-3*time[:cutoff]
-    ydata = cumulative_autocorr[:cutoff] / max(cumulative_autocorr)
+    ydata = cumulative_autocorr[:cutoff] / num_div
     
     # Fitting function
     def g(tau, a, b, c): 
@@ -115,10 +115,10 @@ while(True):
         print("Command not understood.")
         exit()
     ser.flush()
-    ser.send(command)
+    ser.write(command.encode('utf-8'))
     response = Status.READY
     while(response == Status.READY):
-        response = ser.read()
+        response = ser.read().decode('utf-8')
 
     if(command == Status.ACQUIRE):
         while(~ser.in_waiting):
@@ -127,8 +127,8 @@ while(True):
 
     if(command == Status.SEND):
         data = []
-        response[0] = ser.read(2)
-        while(response ~= Status.READY):
+        response[0] = ser.read().decode('utf-8')
+        while(response[0].decode('utf-8') ~= Status.READY):
             data.append(response)
             response = ser.read(2)
         print("Data received.")

@@ -1,8 +1,7 @@
 //main.c - Main program for a bare metal Raspberry Pi 3B interfacing with a custom DLS sensor
-#include <stdlib.h>
 #include "RPi_DLS.h"
 
-#define BUFF_SIZE 32000000 //Number of 16bit data points to save
+#define BUFF_SIZE 8000000 //Number of 16bit data points to save
 
 /* UART MESSAGE FLAGS */
 #define SIG_ACQUIRE 0x41 //A
@@ -12,8 +11,8 @@
 
 int main(void){
     uartInit();
-    uint16_t * data_buffer = (uint16_t *)calloc(BUFF_SIZE, sizeof(uint16_t));
-    unsigned int data = 0;
+ //   uint16_t * data_buffer = (uint16_t *)calloc(BUFF_SIZE, sizeof(uint16_t)); // Unable to use stdlib
+    uint16_t data_buffer [BUFF_SIZE];
 
     while(1){
         unsigned int msg = uartRead();
