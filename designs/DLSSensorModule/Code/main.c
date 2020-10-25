@@ -1,4 +1,5 @@
 //main.c - Main program for a bare metal Raspberry Pi 3B interfacing with a custom DLS sensor
+#include <stdlib.h>
 #include "RPi_DLS.h"
 
 #define BUFF_SIZE 32000000 //Number of 16bit data points to save
