@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name MotorDriverBoard_v2-rescue)(type Legacy)(uri ${KIPRJMOD}/MotorDriverBoard_v2-rescue.lib)(options "")(descr ""))
-)

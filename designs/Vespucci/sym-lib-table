@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name R1_SIM868-cache)(type Legacy)(uri "${KIPRJMOD}/RF Module/R1_SIM868/R1_SIM868-cache.lib")(options "")(descr ""))
-)
