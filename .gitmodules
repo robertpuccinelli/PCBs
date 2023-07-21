@@ -7,3 +7,12 @@
 [submodule "OSHW_Logo"]
 	path = OSHW_Logo
 	url = https://github.com/OSHW/logo.git
+[submodule "libraries/kicad-symbols"]
+	path = libraries/kicad-symbols
+	url = https://gitlab.com/kicad/libraries/kicad-symbols.git
+[submodule "libraries/kicad-footprints"]
+	path = libraries/kicad-footprints
+	url = https://gitlab.com/kicad/libraries/kicad-footprints.git
+[submodule "libraries/kicad-packages3D"]
+	path = libraries/kicad-packages3D
+	url = https://gitlab.com/kicad/libraries/kicad-packages3D.git
