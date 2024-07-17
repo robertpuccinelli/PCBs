@@ -1,0 +1,123 @@
+(footprint "Microfluidic_Pump_550um_150um"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 26.5 11.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "657eb765-7234-460b-a2f0-679dfb9f0063")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Microfluidic_Pump_550um_150um"
+		(at 26.5 12.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "994e9875-175f-4ca9-852e-aef5149daf48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 26.5 11.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3035fe04-91c1-4110-a56e-e76713351dfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 26.5 11.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9841519d-a46d-4424-9a88-a7cf24c573f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 26.5 11.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c87edbf6-95db-4a62-9057-377b3e74e333")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 26.5 14.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "328f22a9-957b-42e4-a67f-af9ffe604145")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at 0 0)
+		(size 0.55 2.5)
+		(layers "F.SilkS")
+		(uuid "8ec5080b-384b-4e89-9d65-d540e4977350")
+	)
+	(pad "1" smd rect
+		(at 0 -0.75)
+		(size 0.7 0.55)
+		(layers "B.Cu")
+		(uuid "1b410a2f-a600-4d6e-899d-09ba09582b0f")
+	)
+	(pad "2" smd rect
+		(at 0 0)
+		(size 0.7 0.55)
+		(layers "B.Cu")
+		(uuid "a66ddb30-02fc-4da1-9ace-e57cb777731c")
+	)
+	(pad "3" smd rect
+		(at 0 0.75)
+		(size 0.7 0.55)
+		(layers "B.Cu")
+		(uuid "2a880640-aaea-4194-89c7-931a8c75087a")
+	)
+	(pad "4" smd trapezoid
+		(at 0 -1.4)
+		(size 0.35 0.3)
+		(rect_delta 0 0.2)
+		(layers "F.Cu")
+		(uuid "a0ad10e9-7b0d-446f-85a7-9b9725f8e12c")
+	)
+	(pad "5" smd trapezoid
+		(at 0 1.4 180)
+		(size 0.35 0.3)
+		(rect_delta 0 0.2)
+		(layers "F.Cu")
+		(uuid "36d201db-e428-4f45-afb1-0d66eb0bf103")
+	)
+)

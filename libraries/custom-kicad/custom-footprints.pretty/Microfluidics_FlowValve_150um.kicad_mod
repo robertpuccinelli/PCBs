@@ -1,0 +1,105 @@
+(footprint "Microfluidics_FlowValve_150um"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 15.85 6.675 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2c4b17c9-0c17-4be5-b43e-656287996715")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Microfluidics_FlowValve_150um"
+		(at 15.85 8.175 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5fc9cbb-b74e-411c-83ff-d459db0fedb3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 15.85 7.175 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7fb7a758-1bda-4392-84ac-142ce5ebbdf5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 15.85 7.175 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "901fb678-33fe-4728-b952-59e3932a4c6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 15.85 7.175 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d900ee37-3131-44ad-a3f5-bacfcdded5af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "${REFERENCE}"
+		(at 15.85 9.675 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0257c6f1-e475-4216-813b-4967fcc89063")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at 0 0)
+		(size 0.15 0.2)
+		(layers "F.SilkS")
+		(uuid "a6007b1b-1d05-4e0c-923e-0f42c2d92251")
+	)
+	(pad "1" smd rect
+		(at 0 -0.175)
+		(size 0.15 0.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "632d1d55-320a-457c-a8ca-a909ffb1cfb6")
+	)
+	(pad "2" smd rect
+		(at 0 0.175)
+		(size 0.15 0.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "7a5eeef2-d95a-4439-bd79-d90eb19375c4")
+	)
+)

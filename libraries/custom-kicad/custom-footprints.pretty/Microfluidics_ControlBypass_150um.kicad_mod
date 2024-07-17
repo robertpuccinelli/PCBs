@@ -1,0 +1,113 @@
+(footprint "Microfluidics_ControlBypass_150um"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 16.25 8.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f6a2b6c3-f5f1-4ea2-9f4a-0d74ba99df51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Microfluidics_ControlBypass_150um"
+		(at 16 9.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ed3c240-b0a3-4b95-b0b5-8e842c135426")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 16.25 9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30fb236f-a328-49f6-b89e-40bc6b552db7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 16.25 9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "726db4ee-f031-4320-8784-cb99b74e631d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 16.25 9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a536720-e5b7-449d-acef-479c2466b4d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 16.25 11.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3ab8142-f84f-4034-b4a7-954d7c4fa4b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at 0 -0.05)
+		(size 0.2 0.05)
+		(layers "B.Cu")
+		(thermal_bridge_angle 45)
+		(uuid "1072f225-2450-4ab7-bf1a-9d5010f68461")
+	)
+	(pad "" smd rect
+		(at 0 0.05)
+		(size 0.2 0.05)
+		(layers "B.Cu")
+		(thermal_bridge_angle 45)
+		(uuid "3607cae2-0af1-4c95-a36b-2244069c955a")
+	)
+	(pad "1" smd rect
+		(at -0.175 0)
+		(size 0.15 0.15)
+		(layers "B.Cu")
+		(thermal_bridge_angle 45)
+		(uuid "1106b791-3b9b-48d1-9593-34d032182f40")
+	)
+	(pad "2" smd rect
+		(at 0.175 0)
+		(size 0.15 0.15)
+		(layers "B.Cu")
+		(thermal_bridge_angle 45)
+		(uuid "e153723a-c93f-41b7-aab8-d7f7e17ede8a")
+	)
+)
