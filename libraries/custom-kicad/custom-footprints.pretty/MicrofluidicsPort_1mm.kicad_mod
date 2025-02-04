@@ -1,26 +1,123 @@
-(footprint "MicrofluidicsPort_1mm" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (attr smd)
-  (fp_text reference "REF**" (at -0.6 -5.4 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.1)))
-    (tstamp b0956716-8eed-4d0f-b1ec-8291c5c27daa)
-  )
-  (fp_text value "MicrofluidicsPort_1mm" (at 0 -1.5 325 unlocked) (layer "F.SilkS" knockout)
-      (effects (font (size 0.7 0.7) (thickness 0.14) bold))
-    (tstamp b88d7457-12e6-4951-85a9-bb47414001c6)
-  )
-  (fp_text user "${REFERENCE}" (at -0.6 -6.8 unlocked) (layer "F.Fab") hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp 72e1bf7a-8e50-41a6-9ef0-f3f3f22d99ad)
-  )
-  (pad "1" smd custom (at 0 0) (size 0.1 0.1) (layers "F.Cu")
-    (zone_connect 1) (thermal_bridge_width 0.2) (thermal_bridge_angle 30)
-    (options (clearance outline) (anchor circle))
-    (primitives
-      (gr_line (start -0.3 -0.3) (end 0.3 0.3) (width 0.1))
-      (gr_line (start -0.3 0.3) (end 0.3 -0.3) (width 0.1))
-      (gr_line (start 0 -0.5) (end 0 0.5) (width 0.1))
-      (gr_line (start -0.5 0) (end 0.5 0) (width 0.1))
-      (gr_circle (center 0 0) (end 0.5 0) (width 0.15) (fill none))
-    ) (tstamp 03b90146-6218-4075-973a-bcd81d22ade3))
+(footprint "MicrofluidicsPort_1mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.6 -5.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b0956716-8eed-4d0f-b1ec-8291c5c27daa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "MicrofluidicsPort_1mm"
+		(at 0 -1.5 -35)
+		(unlocked yes)
+		(layer "User.9" knockout)
+		(uuid "b88d7457-12e6-4951-85a9-bb47414001c6")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.14)
+				(bold yes)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b825ab0-c49d-42bb-9cff-95ab206f79aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e15a7428-4f05-4b6e-91ff-4babda7f1f09")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62703d24-858e-4624-85ee-87063dfd2ac8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at -0.6 -6.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "72e1bf7a-8e50-41a6-9ef0-f3f3f22d99ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at 0 0)
+		(size 0.1 0.1)
+		(layers "F.Cu")
+		(zone_connect 1)
+		(thermal_bridge_width 0.2)
+		(thermal_bridge_angle 30)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_line
+				(start -0.3 -0.3)
+				(end 0.3 0.3)
+				(width 0.1)
+			)
+			(gr_line
+				(start -0.3 0.3)
+				(end 0.3 -0.3)
+				(width 0.1)
+			)
+			(gr_line
+				(start 0 -0.5)
+				(end 0 0.5)
+				(width 0.1)
+			)
+			(gr_line
+				(start -0.5 0)
+				(end 0.5 0)
+				(width 0.1)
+			)
+			(gr_circle
+				(center 0 0)
+				(end 0.5 0)
+				(width 0.15)
+				(fill no)
+			)
+		)
+		(uuid "03b90146-6218-4075-973a-bcd81d22ade3")
+	)
 )
